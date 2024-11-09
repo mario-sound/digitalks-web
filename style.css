@@ -29,7 +29,7 @@ ul {
 
 /* ========== HEADER ========== */
 header {
-    background: #fdfdf1;
+    background: #fbfbf8;
     padding: 0.1rem 0;
     padding-bottom: 1rem 0;
     color: #000;
@@ -44,7 +44,7 @@ header.scrolled {
     background: #424242;
     height: 11vh;
     border-bottom-left-radius: 50% 25%;
-    color: #fdfdf1;
+    color: #fbfbf8;
     opacity: 90%;
 }
 
@@ -85,7 +85,7 @@ nav ul li a:hover {
 
 /* ========== HERO SECTION ========== */
 #hero {
-    background: #fdfdf1;
+    background: #fbfbf8;
     text-align: left;
     padding: 2rem 0;
 }
@@ -166,7 +166,7 @@ nav ul li a:hover {
 
 /* ========== JOIN US SECTION ========== */
 #join-us {
-    background: #fdfdf1;
+    background: #fbfbf8;
     text-align: center;
     padding: 2rem 0;
 }
@@ -218,7 +218,7 @@ nav ul li a:hover {
 #efficiency {
     text-align: center;
     padding: 2rem 0;
-    background: #fdfdf1;
+    background: #fbfbf8;
 }
 
 #efficiency h2 {
@@ -236,11 +236,26 @@ nav ul li a:hover {
     color: #555;
 }
 
+/* Estilo para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000; /* Encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    overflow: auto; /* Permite scroll si el contenido es largo */
+}
+
+
+
 /* ========== HUMAN IA SECTION ========== */
 #human-ia {
     text-align: center;
     padding: 3rem 0;
-    background: #fdfdf1;
+    background: #fbfbf8;
 }
 
 #human-ia h2 {
@@ -287,7 +302,7 @@ nav ul li a:hover {
 #cta-more {
     text-align: center;
     padding: 2rem 0;
-    background: #fdfdf1;
+    background: #fbfbf8;
 }
 
 #cta-more h2 {
@@ -317,7 +332,7 @@ nav ul li a:hover {
 }
 
 .cta-button-professional:hover, .cta-button-company:hover {
-    background: #fdfdf1;
+    background: #fbfbf8;
     color: #6c5201;
 }
 
@@ -325,7 +340,7 @@ nav ul li a:hover {
 #contact-form {
     text-align: center;
     padding: 3rem 0;
-    background: #fdfdf1;
+    background: #fbfbf8;
 }
 
 #contact-form h2 {
@@ -378,7 +393,7 @@ form button:hover {
 
 /* ========== FOOTER ========== */
 #site-footer {
-    background: #fdfdf1;
+    background: #fbfbf8;
     padding: 0.5rem 0;
     color: #555;
 }
@@ -446,4 +461,92 @@ form button:hover {
     .hero-image img {
         width: 50%;
     }
+}
+
+/* ========== MODAL ========== */
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    color: #000;
+    border: 2px solid #6c5201;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #6c5201;
+    color: #fff;
+}
+
+/* Modal oculto inicialmente */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    overflow: auto;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cerrar el modal */
+.close-button {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+/* Diseño de columnas */
+.comparison {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 1rem;
+}
+
+.column {
+    width: 45%;
+}
+
+.column h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.column ul li strong {
+    color: #6c5201;
 }

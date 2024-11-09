@@ -40,7 +40,35 @@ document.addEventListener("DOMContentLoaded", () => {
         // Opcional: Limpiar los campos después del envío
         form.reset();
     });
+
+    // Agregar evento click al botón "Ver más"
+    const openModalButton = document.querySelector(".cta-button");
+    const modal = document.getElementById("info-modal");
+    const closeModalButton = modal.querySelector(".close-button");
+
+    if (openModalButton) {
+        openModalButton.addEventListener("click", () => {
+            // Muestra el modal
+            modal.style.display = "block";
+        });
+    } else {
+        console.error("No se encontró el botón 'Ver más'.");
+    }
+
+    // Cerrar el modal al hacer clic en la "X"
+    closeModalButton.addEventListener("click", () => {
+        modal.style.display = "none"; // Oculta el modal
+    });
+
+    // Cerrar el modal al hacer clic fuera del contenido
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none"; // Oculta el modal
+        }
+    });
 });
+
+
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(event) {
@@ -59,3 +87,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
