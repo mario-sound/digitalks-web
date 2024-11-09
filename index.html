@@ -11,7 +11,7 @@
     <header class="animated-header">
             <div class="container">
             <h1>
-                #Digi<span class="highlight-bold">Talks</span> AI
+                <span class="normal">#</span>Digi<span class="highlight-bold">Talks</span> AI
             </h1>
             <nav>
                 <ul>
@@ -28,10 +28,10 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <h2>Voces <span class="highlight">profesionales</span> generadas con <span class="highlight">IA</span></h2>
-                <p>Cuando juntas las <span class="highlight">herramientas correctas</span> con las <span class="highlight">personas correctas</span>, ocurren grandes cosas.</p>
-                <p>La IA es <span class="highlight">solo una herramienta</span>.</p>
                 <p>Producimos voces de calidad <strong>sin que nuestros clientes se arruinen.</strong> Y nuestros profesionales tampoco.</p>
-                <p>Hacemos todo esto: (y más)</p>
+                <p>Cuando juntas las <span class="highlight">herramientas correctas</span> con las <span class="highlight">personas correctas</span>, ocurren grandes cosas.</p>
+                <p>No le demos más vueltas... La IA es <span class="highlight">sólo una herramienta</span>.</p>
+                <p><strong>Hacemos todo esto:</strong> (y más)</p>
                 <ul>
                     <li><a href="#">Audiolibros</a></li>
                     <li><a href="#">E-learnings</a></li>
@@ -41,6 +41,8 @@
                     <li><a href="#">Contenido RRSS</a></li>
                     <li><a href="#">Newsletters</a></li>
                 </ul>
+            <br>
+            <p><strong>Y sin duda, lo hacemos bien.</strong></p>
             </div>
             <div class="hero-image">
                 <img src="images/illustration.png" alt="Ilustración representativa">
@@ -67,13 +69,25 @@
         <div class="container">
             <h2>¿Eres <span class="highlight">profesional de la voz</span> y quieres <span class="highlight">trabajar</span> con <span class="highlight">nosotros</span>?</h2>
             <h3>¡Apúntate a la <span class="highlight">lista de espera</span>!</h3>
-            <form id="waitlist-form">
+            <form id="waitlist-form" action="https://formspree.io/f/xjkvrvrv" method="POST">
+                <!-- Campo oculto para indicar la fuente -->
+                <input type="hidden" name="source" value="waitlist">
+                
+                <!-- Campo para el email del usuario -->
                 <label for="email">Email *</label>
-                <input type="email" id="email" name="email" placeholder="Te contactaremos a este email cuando estemos en marcha." required>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Te contactaremos a este email cuando estemos en marcha." 
+                    required
+                >
+                
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
+    
 
     <section id="efficiency" class="fade-in">
         <div class="container">
@@ -114,17 +128,35 @@
         <div class="container">
             <h2>¡Quiero saber <span class="highlight">más!</span></h2>
             <div class="cta-buttons">
-                <a href="#professional" class="cta-button-professional">Soy Profesional</a>
-                <a href="#company" class="cta-button-company">Soy Empresa</a>
+                <button class="cta-button-professional" type="button">Soy Profesional</button>
+                <button class="cta-button-company" type="button">Soy Empresa</button>
             </div>
         </div>
     </section>
     
+        <!-- Modal para "Soy Profesional" -->
+    <div id="modal-professional" class="modal">
+        <div class="modal-content">
+            <span class="close-button" data-modal="modal-professional">&times;</span>
+            <h2>Información para Profesionales</h2>
+            <p>Únete a <strong>DigiTalks AI</strong> y lleva tu talento al siguiente nivel. Trabaja en proyectos variados como audiolibros, documentales y contenido digital, con la <strong>flexibilidad</strong> de elegir tus horarios y desde cualquier lugar. Aquí <strong>respetamos tu tiempo y valoramos tu creatividad</strong>, ofreciéndote herramientas de IA que <strong>potencian</strong> tu productividad y honorarios justos que reconocen tu profesionalismo. ¡Sé parte de la <strong>revolución</strong> de la voz profesional!</p>
+        </div>
+    </div>
+
+    <!-- Modal para "Soy Empresa" -->
+    <div id="modal-company" class="modal">
+        <div class="modal-content">
+            <span class="close-button" data-modal="modal-company">&times;</span>
+            <h2>Información para Empresas</h2>
+            <p>Confía en <strong>DigiTalks AI</strong> y lleva tus proyectos de voz al siguiente nivel. Creamos contenido profesional como audiolibros, documentales y guías digitales, combinando la <strong>precisión de la IA</strong> con el talento humano. Nuestro enfoque te garantiza resultados de alta calidad, optimizando tiempos y costes sin comprometer la autenticidad. Aquí <strong>convertimos tus ideas en experiencias sonoras únicas</strong>. ¡Impulsa tu marca con la <strong>revolución</strong> de la voz profesional!</p>
+        </div>
+    </div>
+
 
     <section id="contact-form" class="fade-in">
         <div class="container">
             <h2>¿Alguna <span class="highlight">duda?</span></h2>
-            <form action="#" method="POST">
+            <form action="https://formspree.io/f/mgveyekd" method="POST">
                 <label for="name">Nombre *</label>
                 <input type="text" id="name" name="name" placeholder="Tu nombre" required>
     
@@ -143,12 +175,15 @@
     <footer id="site-footer">
         <div class="container">
             <div class="footer-logo">
-                <h3><span class="normal">#</span>Digi<span class="highlight-bold">Talks</span> AI</h3>
-                <p><span class="italic">Voces profesionales con Inteligencia Artificial</span></p>
+                <a href="index.html" class="footer-logo">
+                    <h3><span class="normal">#</span>Digi<span class="highlight-bold">Talks</span> AI</h3>
+                    <p><span class="italic">Voces profesionales con Inteligencia Artificial</span></p>
+                </a>
             </div>
             <div class="footer-links">
-                <a href="#privacy-policy">Política de privacidad</a>
-                <a href="#terms-conditions">Términos y condiciones</a>
+                <a href="privacy-policy.html">Política de privacidad</a>
+                <a href="politica-cookies.html">Política de cookies</a>
+                <a href="terms-conditions.html">Términos y condiciones</a>
             </div>
         </div>
     </footer>
@@ -175,33 +210,6 @@
                         <li><strong>Tiempo de producción:</strong> 1 semana</li>
                         <li><strong>Estudio de sonido:</strong> No requiere</li>
                         <li><strong>Coste aprox.:</strong> 1,5k€</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="info-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2>Tradicional vs IA</h2>
-            <p class="subtitle">Caso práctico de un Audiolibro de 10h</p>
-            <div class="comparison">
-                <div class="column">
-                    <h3>Tradicional</h3>
-                    <ul>
-                        <li><strong>35/40h</strong> de grabación con Actor/Técnico/Estudio</li>
-                        <li><strong>Tiempo de producción:</strong> 1 mes</li>
-                        <li><strong>Estudio de sonido:</strong> Imprescindible</li>
-                        <li><strong>Coste aprox.:</strong> 4000€</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>IA</h3>
-                    <ul>
-                        <li><strong>15/20h</strong> de procesado a coste reducido</li>
-                        <li><strong>Tiempo de producción:</strong> 1 semana</li>
-                        <li><strong>Estudio de sonido:</strong> No requiere</li>
-                        <li><strong>Coste aprox.:</strong> 1500€</li>
                     </ul>
                 </div>
             </div>

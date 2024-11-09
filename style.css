@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif, Arial;
     line-height: 1.6;
     overflow-x: hidden;
     font-size: 120%;
@@ -57,7 +57,7 @@ header h1 {
 
 header h1 .highlight-bold {
     font-weight: bold;
-    color: #6c5201;
+    color: #f0bc5e;
 }
 
 header h1 .highlight-bold.scrolled {
@@ -67,6 +67,12 @@ header h1 .highlight-bold.scrolled {
 header h1.scrolled {
     color: #fff;
 }
+
+header h1 .normal {
+    color: #f0bc5e;
+    font-weight: bold;
+}
+
 
 nav ul {
     display: flex;
@@ -80,7 +86,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #6c5201;
+    color: #f0bc5e;
 }
 
 /* ========== HERO SECTION ========== */
@@ -115,7 +121,7 @@ nav ul li a:hover {
 }
 
 .hero-text .highlight {
-    color: #6c5201;
+    color: #f0bc5e;
     font-weight: bold;
 }
 
@@ -129,7 +135,7 @@ nav ul li a:hover {
 }
 
 .hero-text ul li a:hover {
-    color: #6c5201;
+    color: #f0bc5e;
 }
 
 .hero-image {
@@ -147,7 +153,7 @@ nav ul li a:hover {
 /* ========== FEATURES SECTION ========== */
 .features {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 2rem;
     text-align: center;
 }
@@ -178,7 +184,7 @@ nav ul li a:hover {
 
 #join-us .highlight {
     font-weight: bold;
-    color: #6c5201;
+    color: #f0bc5e;
 }
 
 #join-us form {
@@ -194,23 +200,23 @@ nav ul li a:hover {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 1rem;
 }
 
 #join-us button {
     padding: 0.8rem 1.5rem;
     background: transparent;
-    border: 2px solid #6c5201;
+    border: 2px solid #f0bc5e;
     color: #000;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 #join-us button:hover {
-    background: #6c5201;
+    background: #f0bc5e;
     color: #fff;
 }
 
@@ -229,7 +235,7 @@ nav ul li a:hover {
 
 #efficiency .highlight {
     font-weight: bold;
-    color: #6c5201;
+    color: #f0bc5e;
 }
 
 #efficiency a:hover {
@@ -272,7 +278,7 @@ nav ul li a:hover {
 }
 
 #human-ia .highlight {
-    color: #6c5201;
+    color: #f0bc5e;
     font-weight: bold;
 }
 
@@ -323,17 +329,18 @@ nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: all 0.3s ease;
+    border: none;
 }
 
 .cta-button-company, .cta-button-professional {
-    background: #6c5201;
+    background: #f0bc5e;
 }
 
 .cta-button-professional:hover, .cta-button-company:hover {
     background: #fbfbf8;
-    color: #6c5201;
+    color: #f0bc5e;
 }
 
 /* ========== CONTACT FORM SECTION ========== */
@@ -365,7 +372,7 @@ form input, form textarea {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 1rem;
 }
 
@@ -378,7 +385,7 @@ form button {
     padding: 0.8rem 1.5rem;
     background: transparent;
     color: #000;
-    border: 2px solid #6c5201;
+    border: 2px solid #f0bc5e;
     font-weight: bold;
     font-size: 1rem;
     border-radius: 50px;
@@ -387,7 +394,7 @@ form button {
 }
 
 form button:hover {
-    background: #6c5201;
+    background: #f0bc5e;
     color: #fff;
 }
 
@@ -419,11 +426,15 @@ form button:hover {
 .footer-logo {
     text-align: left;
     flex: 1; /* Ocupa el espacio disponible a la izquierda */
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Mantiene el color original del texto */
+
 }
 
 .footer-links {
     text-align: right;
     flex: 1; /* Ocupa el espacio disponible a la derecha */
+    font-size: 80%;
 }
 
 .footer-links a {
@@ -465,20 +476,21 @@ form button:hover {
 
 /* ========== MODAL ========== */
 .cta-button {
-    padding: 0.8rem 1.5rem;
-    background: transparent;
-    color: #000;
-    border: 2px solid #6c5201;
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
     border-radius: 50px;
-    cursor: pointer;
     transition: all 0.3s ease;
+    border: none;
+    background: #f0bc5e;
 }
 
 .cta-button:hover {
-    background: #6c5201;
-    color: #fff;
+    background: #fbfbf8;
+    color: #f0bc5e;
 }
 
 /* Modal oculto inicialmente */
@@ -499,7 +511,7 @@ form button:hover {
     background-color: #fff;
     margin: 10% auto;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 50px;
     max-width: 600px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -548,5 +560,5 @@ form button:hover {
 }
 
 .column ul li strong {
-    color: #6c5201;
+    color: #f0bc5e;
 }

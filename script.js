@@ -1,4 +1,3 @@
-
 // Add scroll effects for header
 window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
@@ -17,7 +16,7 @@ window.addEventListener("scroll", () => {
 
 // Form submission alert
 document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+    //event.preventDefault();
     alert("Formulario enviado. ¡Gracias por contactarnos!");
 });
 
@@ -29,15 +28,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Formulario de contacto - Mostrar mensaje de confirmación
     const form = document.querySelector("form");
+
     form.addEventListener("submit", function(event) {
-        event.preventDefault(); // Evitar el envío real del formulario
+        // event.preventDefault(); // Evitar el envío real del formulario
+
+        // Eliminar mensajes de confirmación anteriores (opcional)
+        const existingConfirmation = form.querySelector(".confirmation");
+        if (existingConfirmation) {
+            existingConfirmation.remove();
+        }
+
+        // Crear y mostrar el mensaje de confirmación
         const confirmation = document.createElement("p");
         confirmation.textContent = "¡Gracias por contactarnos! Pronto nos pondremos en contacto contigo.";
         confirmation.style.color = "green";
         confirmation.style.marginTop = "1rem";
+        confirmation.classList.add("confirmation");
         form.appendChild(confirmation);
 
-        // Opcional: Limpiar los campos después del envío
+        // Limpiar los campos del formulario
         form.reset();
     });
 
@@ -66,10 +75,45 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.style.display = "none"; // Oculta el modal
         }
     });
+
+    // Modales para "Soy Profesional" y "Soy Empresa"
+    const professionalButton = document.querySelector(".cta-button-professional");
+    const companyButton = document.querySelector(".cta-button-company");
+
+    const professionalModal = document.getElementById("modal-professional");
+    const companyModal = document.getElementById("modal-company");
+
+    const closeButtons = document.querySelectorAll(".close-button");
+
+    // Abrir el modal correspondiente
+    professionalButton.addEventListener("click", () => {
+        professionalModal.style.display = "block";
+    });
+
+    companyButton.addEventListener("click", () => {
+        companyModal.style.display = "block";
+    });
+
+    // Cerrar los modales al hacer clic en la "X"
+    closeButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            const modalId = event.target.getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
+
+    // Cerrar los modales al hacer clic fuera del contenido
+    window.addEventListener("click", (event) => {
+        if (event.target.classList.contains("modal")) {
+            event.target.style.display = "none";
+        }
+    });
 });
 
-
-
+// Desplazamiento suave para enlaces ancla
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(event) {
         event.preventDefault();
@@ -87,5 +131,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-
