@@ -1,514 +1,84 @@
-/* ========== GENERAL STYLES ========== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: "icons-digitalks";
+  src: url("./fonts/icons-digitalks.eot");
+  src: url("./fonts/icons-digitalks.eot") format("embedded-opentype"),
+    url("./fonts/icons-digitalks.woff") format("woff2"),
+    url("./fonts/icons-digitalks.ttf") format("truetype"),
+    url("./fonts/icons-digitalks.svg") format("svg");
 }
 
 body {
-    font-family: sans-serif, Arial;
-    line-height: 1.6;
-    overflow-x: hidden;
-    font-size: 120%;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-/* ========== HEADER ========== */
 header {
-    background: #fbfbf8;
-    padding: 0.1rem 0;
-    padding-bottom: 1rem 0;
-    color: #000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-header.scrolled {
-    background: #424242;
-    height: 11vh;
-    border-bottom-left-radius: 50% 25%;
-    color: #fbfbf8;
-    opacity: 90%;
+  display: flex;
+  justify-content: space-between; /* Distribuye el h1 y el nav */
+  align-items: center; /* Alinea verticalmente los elementos */
+  padding: 10px 20px; /* Espaciado alrededor del header */
 }
 
 header h1 {
-    font-size: 2rem;
-    font-weight: normal;
-    margin: 0;
-    color: #000;
+  letter-spacing: -0.05em;
+  font-size: 2.4em;
+  margin: 0; /* Elimina el margen predeterminado */
 }
 
-header h1 .highlight-bold {
-    font-weight: bold;
-    color: #f0bc5e;
+header h1 span:first-child {
+  color: grey;
+  font-weight: bold;
+  font-size: 0.8em;
 }
 
-header h1 .highlight-bold.scrolled {
-    color: #f0bc5e;
+header h1 span:nth-of-type(2) {
+  font-weight: 500;
+  color: black;
 }
 
-header h1.scrolled {
-    color: #fff;
+header h1 span:nth-of-type(3) {
+  color: #f0bc5e;
+  text-decoration: underline solid 1px;
+  text-underline-offset: 0.2em;
 }
 
-header h1 .normal {
-    color: #f0bc5e;
-    font-weight: bold;
+header h1 span:nth-of-type(4) {
+  color: black;
+  font-weight: 500;
 }
 
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-}
-
-nav ul li a {
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f0bc5e;
-}
-
-/* ========== HERO SECTION ========== */
-#hero {
-    background: #fbfbf8;
-    text-align: left;
-    padding: 2rem 0;
-}
-
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.hero-text {
-    flex: 1;
-    max-width: 50%;
-}
-
-.hero-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.3;
-}
-
-.hero-text p {
-    margin-bottom: 1rem;
-    line-height: 1.5;
-}
-
-.hero-text .highlight {
-    color: #f0bc5e;
-    font-weight: bold;
-}
-
-.hero-text ul {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-}
-
-.hero-text ul li {
-    list-style: disc;
-}
-
-.hero-text ul li a:hover {
-    color: #f0bc5e;
-}
-
-.hero-image {
-    flex: -50;
-    text-align: right;
-}
-
-.hero-image img {
-    max-width: 100%;
-    width: 65%;
-    height: auto;
-    display: block;
-}
-
-/* ========== FEATURES SECTION ========== */
-.features {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.feature-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.feature-item img {
-    max-width: 50px;
-    height: auto;
-}
-
-/* ========== EFFICIENCY SECTION ========== */
-#efficiency {
-    text-align: center;
-    padding: 2rem 0;
-    background: #fbfbf8;
-}
-
-#efficiency h2 {
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-#efficiency .highlight {
-    font-weight: bold;
-    color: #f0bc5e;
-}
-
-#efficiency a:hover {
-    color: #555;
-}
-
-/* Estilo para el modal */
-.modal {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    z-index: 1000; /* Encima de otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    overflow: auto; /* Permite scroll si el contenido es largo */
-}
-
-
-
-/* ========== HUMAN IA SECTION ========== */
-#human-ia {
-    text-align: center;
-    padding: 3rem 0;
-    background: #fbfbf8;
-}
-
-#human-ia h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-#human-ia p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#human-ia .highlight {
-    color: #f0bc5e;
-    font-weight: bold;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.service-item {
-    text-align: center;
-}
-
-.service-item img {
-    max-width: 100px;
-    margin-bottom: 1rem;
-}
-
-.service-item h3 {
-    font-size: 1.1rem;
-    line-height: 1.4;
-    color: #000;
-}
-
-/* ========== CTA MORE SECTION ========== */
-#cta-more {
-    text-align: center;
-    padding: 2rem 0;
-    background: #fbfbf8;
-}
-
-#cta-more h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.cta-button-professional, .cta-button-company {
-    display: inline-block;
-    padding: 1rem 2rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    border: none;
-}
-
-.cta-button-company, .cta-button-professional {
-    background: #f0bc5e;
-}
-
-.cta-button-professional:hover, .cta-button-company:hover {
-    background: #fbfbf8;
-    color: #f0bc5e;
-}
-
-/* ========== CONTACT FORM SECTION ========== */
-#contact-form {
-    text-align: center;
-    padding: 3rem 0;
-    background: #fbfbf8;
-}
-
-#contact-form h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-form label {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    font-size: 1rem;
-}
-
-form textarea {
-    min-height: 100px;
-    resize: none;
-}
-
-form button {
-    padding: 0.8rem 1.5rem;
-    background: transparent;
-    color: #000;
-    border: 2px solid #f0bc5e;
-    font-weight: bold;
-    font-size: 1rem;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-form button:hover {
-    background: #f0bc5e;
-    color: #fff;
-}
-
-/* ========== FOOTER ========== */
-#site-footer {
-    background: #fbfbf8;
-    padding: 0.5rem 0;
-    color: #555;
-}
-
-#site-footer .container {
-    display: flex; /* Hace que los elementos hijos se alineen horizontalmente */
-    justify-content: space-between; /* Separa los elementos hacia los extremos */
-    align-items: center; /* Centra los elementos verticalmente */
-}
-
-#site-footer .italic {
-    font-style: italic;
-    color: #555; /* Color suave para diferenciar el texto */
-    font-weight: normal; /* Asegura que el texto no esté en negrita */
-}
-
-#site-footer .normal {
-    font-style: normal;
-    color: #f0bc5e; /* Color suave para diferenciar el texto */
-    font-weight: normal; /* Asegura que el texto no esté en negrita */
-}
-
-.footer-logo {
-    text-align: left;
-    flex: 1; /* Ocupa el espacio disponible a la izquierda */
-    text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Mantiene el color original del texto */
-
-}
-
-.footer-links {
-    text-align: right;
-    flex: 1; /* Ocupa el espacio disponible a la derecha */
-    font-size: 80%;
-}
-
-.footer-links a {
-    color: #000;
-    margin-left: 1rem;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #f0bc5e;
-}
-
-/* ========== ANIMATIONS ========== */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* ========== MEDIA QUERIES ========== */
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-    }
-
-    .hero-image img {
-        width: 50%;
-    }
-}
-
-/* ========== MODAL ========== */
-.cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    border: none;
-    background: #f0bc5e;
-}
-
-.cta-button:hover {
-    background: #fbfbf8;
-    color: #f0bc5e;
-}
-
-/* Modal oculto inicialmente */
-.modal {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    overflow: auto;
-}
-
-/* Contenido del modal */
-.modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 50px;
-    max-width: 600px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Cerrar el modal */
-.close-button {
-    float: right;
-    font-size: 24px;
-    font-weight: bold;
-    color: #aaa;
-    cursor: pointer;
-}
-
-.close-button:hover {
-    color: #000;
+header nav {
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina relleno predeterminado */
 }
 
-/* Diseño de columnas */
-.comparison {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    gap: 1rem;
+header nav ul {
+  display: flex; /* Coloca los elementos en fila horizontal */
+  gap: 2em; /* Añade espacio entre los elementos */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina relleno */
 }
 
-.column {
-    width: 45%;
+header nav ul li {
+  list-style-type: none;
 }
 
-.column h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 
-.column ul {
-    list-style: none;
-    padding: 0;
+header nav a:hover {
+  text-decoration: none;
+  color: #f0bc5e;
 }
 
-.column ul li {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    line-height: 1.5;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.column ul li strong {
-    color: #f0bc5e;
+a:hover {
+  text-decoration: none;
+  color: #f0bc5e;
 }
