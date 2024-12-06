@@ -1,4 +1,30 @@
 @font-face {
+  font-family: "Asimov";
+  src: url("./fonts/fonts/asimov/AsimovNar.woff2") format("woff2"),
+    url("./fonts/fonts/asimov/AsimovNar.woff") format("woff"),
+    url("./fonts/fonts/asimov/AsimovNar.ttf") format("truetype"),
+    url("./fonts/fonts/asimov/AsimovNar.svg#AsimovNar") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZT Gatha SemBd";
+  src: url("./fonts/fonts/gatha/ZTGatha-SemiBold.eot");
+  src: url("./fonts/fonts/gatha/ZTGatha-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/gatha/ZTGatha-SemiBold.woff2") format("woff2"),
+    url("./fonts/fonts/gatha/ZTGatha-SemiBold.woff") format("woff"),
+    url("./fonts/fonts/gatha/ZTGatha-SemiBold.ttf") format("truetype"),
+    url("./fonts/fonts/gatha/ZTGatha-SemiBold.svg#ZTGatha-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "icons-digitalks";
   src: url("fonts/icons-digitalks.eot?hvgf99");
   src: url("fonts/icons-digitalks.eot?hvgf99#iefix") format("embedded-opentype"),
@@ -403,61 +429,71 @@
 .icon-html-five2:before {
   content: "\eae5";
 }
-* {
-  box-sizing: border-box;
-}
 
+/* GENERAL */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: sans-serif, Helvetica, Arial;
   margin-left: 0px;
   margin-top: 0px;
   margin-right: 0px;
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.highlight {
+  color: #f0bc5e;
+  font-weight: bold;
+}
+
+/* HEADER */
 header {
-  display: flex;
-  justify-content: space-between; /* Distribuye el h1 y el nav */
-  align-items: center; /* Alinea verticalmente los elementos */
-  padding: 10px 20px; /* Espaciado alrededor del header */
-  background-color: rgb(251, 251, 248);
   margin: 0px;
-  padding: 1em;
+  position: relative;
+}
+header section {
+  background-color: rgb(251, 251, 248);
   border-bottom: 2px solid grey;
   width: 100%;
+  height: 7.5vh;
 }
 
 header p {
-  letter-spacing: -0.05em;
-  font-size: 2.4em;
+  font-family: "ZT Gatha SemBd";
+  letter-spacing: -0.01em;
+  font-size: 2.5rem;
+  font-weight: 800;
   margin: 0; /* Elimina el margen predeterminado */
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  padding: 0;
 }
 
 header p span:first-child {
-  color: grey;
-  font-weight: bold;
-  font-size: 0.8em;
+  font-weight: 500;
+  color: black;
 }
 
 header p span:nth-of-type(2) {
-  font-weight: 500;
-  color: black;
+  color: #f0bc5e;
 }
 
 header p span:nth-of-type(3) {
-  color: #f0bc5e;
-  text-decoration: underline solid 1px;
-  text-underline-offset: 0.2em;
-}
-
-header p span:nth-of-type(4) {
-  color: black;
-  font-weight: 500;
+  color: #ccc;
+  font-size: 2rem;
 }
 
 header nav {
+  font-family: "ZT Gatha SemBd";
   margin: 0; /* Elimina márgenes predeterminados */
   padding: 0; /* Elimina relleno predeterminado */
+  position: absolute;
+  top: 25%;
+  right: 2%;
 }
 
 header nav ul {
@@ -465,7 +501,6 @@ header nav ul {
   gap: 10%; /* Añade espacio entre los elementos */
   margin: 0; /* Elimina márgenes */
   padding: 0; /* Elimina relleno */
-  justify-content: center;
 }
 
 header nav ul li {
@@ -485,18 +520,12 @@ a:hover {
   color: #f0bc5e;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+/* MAIN */
+main p {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.highlight {
-  color: #f0bc5e;
-  font-weight: bold;
-}
-
-main {
-  margin: 1.5em;
+main .first-text {
+  width: 45%;
 }
 
 main section h1 {
@@ -511,26 +540,16 @@ section.effectivity figure {
 
 section.effectivity {
   display: flex;
-  justify-content: center;
   align-items: center;
   font-weight: bold;
   text-align: center;
 }
 
-section p:first-of-type * {
-  line-height: 2em;
-}
-
-main section section:nth-of-type(2) {
-  margin-top: 2em;
-}
-
-main section ul li {
+main section.first-text ul li {
   list-style-type: none;
-  font-size: 1.2em;
-  line-height: 1.3em;
 }
 
+/* DETAILS */
 details summary {
   list-style-type: none;
 }
@@ -538,76 +557,89 @@ details summary {
 details summary span {
   display: inline-block;
   background-color: #f0bc5e;
-  color: white;
+  color: rgb(251, 251, 248);
   padding: 10px;
   border-radius: 20px;
   margin-bottom: 1%;
 }
 details summary span:hover {
   display: inline-block;
-  background-color: white;
+  background-color: rgb(251, 251, 248);
   color: #f0bc5e;
   padding: 10px;
   border-radius: 20px;
   margin-bottom: 1%;
+  outline: #f0bc5e 1px solid;
+  transition: 0.5s ease;
 }
 
 details article {
   padding: 2%;
   padding-top: 1%;
   background-color: rgb(251, 251, 248);
+  background-image: linear-gradient(rgb(251, 251, 248), white);
   color: black;
 }
 
+/* FOOTER */
 footer {
-  display: flex;
   justify-content: space-between; /* Distribuye el h1 y el nav */
   align-items: center; /* Alinea verticalmente los elementos */
-  padding: 1% 1%; /* Espaciado alrededor del header */
   background-color: rgb(251, 251, 248);
-  margin: 0px;
-  padding-top: 2%;
+  padding-bottom: 5rem;
   border-top: 2px solid grey;
-  width: 100%;
+  position: relative;
+  margin-top: 80vh;
+  padding-top: 1rem;
 }
 
-footer h3 {
-  letter-spacing: -0.05em;
+footer p {
   font-size: 2.4em;
-  margin: 0; /* Elimina el margen predeterminado */
+  margin: 0;
+  font-family: "ZT Gatha SemBd";
+  letter-spacing: -0.01em;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
-footer h3 span:first-child {
-  color: grey;
-  font-weight: bold;
-  font-size: 0.8em;
-}
-
-footer h3 span:nth-of-type(2) {
+footer p span:first-child {
   font-weight: 500;
   color: black;
 }
 
-footer h3 span:nth-of-type(3) {
+footer p span:nth-of-type(2) {
   color: #f0bc5e;
-  text-decoration: underline solid 3px;
-  text-underline-offset: 0.2em;
 }
 
-footer h3 span:nth-of-type(4) {
+footer p span:nth-of-type(3) {
+  color: #ccc;
+  font-size: 2rem;
+}
+
+footer p span:nth-of-type(4) {
   color: black;
+  font-size: small;
   font-weight: 500;
+  width: auto;
 }
 
-footer nav a:nth-of-type(2),
-footer nav a:nth-of-type(3) {
-  margin-left: 10%;
+footer p:nth-of-type(2) {
+  font-size: small;
+  width: 30%;
 }
 
 footer nav {
-  margin-right: 5%;
+  display: flex;
+  position: absolute;
+  right: 2%;
+}
+
+footer .gris {
+  color: grey;
 }
 
 footer > .logo-footer {
-  margin-left: 5%;
+  position: absolute;
+  bottom: 100;
+  left: 2%;
 }

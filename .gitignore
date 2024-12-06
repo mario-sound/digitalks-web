@@ -1,0 +1,9 @@
+# Archivos y carpetas comunes en proyectos web
+node_modules/
+dist/
+.env
+.vscode/
+
+# Archivos del sistema
+Thumbs.db
+.DS_Store
