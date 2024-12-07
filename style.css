@@ -1,4 +1,245 @@
 @font-face {
+  font-family: "Montserrat-reg";
+  src: url("./fonts/fonts/lato-montserrat/Montserrat-Regular.eot");
+  src: url("./fonts/fonts/lato-montserrat/Montserrat-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Regular.woff2")
+      format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Regular.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Regular.ttf")
+      format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Regular.svg#Montserrat-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-semibold";
+  src: url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.eot");
+  src: url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.woff2")
+      format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.ttf")
+      format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.svg#Montserrat-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-med";
+  src: url("./fonts/fonts/lato-montserrat/Montserrat-Medium.eot");
+  src: url("./fonts/fonts/lato-montserrat/Montserrat-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Medium.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Medium.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Medium.ttf")
+      format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Medium.svg#Montserrat-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-thin";
+  src: url("./fonts/fonts/lato-montserrat/Montserrat-Thin.eot");
+  src: url("./fonts/fonts/lato-montserrat/Montserrat-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Thin.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Thin.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Thin.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Montserrat-Thin.svg#Montserrat-Thin")
+      format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LatoItalic";
+  src: url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.svg#Lato-BlackItalic")
+      format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LatoBlack";
+  src: url("./fonts/fonts/lato-montserrat/Lato-Black.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Black.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-Black.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-Black.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Black.svg#Lato-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-bold";
+  src: url("./fonts/fonts/lato-montserrat/Lato-Bold.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Bold.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-Bold.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-Bold.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato Hairline Italic";
+  src: url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.woff2")
+      format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.ttf")
+      format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.svg#Lato-HairlineItalic")
+      format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-bolditalic";
+  src: url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.svg#Lato-BoldItalic")
+      format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-light";
+  src: url("./fonts/fonts/lato-montserrat/Lato-Light.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Light.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-Light.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-Light.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Light.svg#Lato-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-normitalic";
+  src: url("./fonts/fonts/lato-montserrat/Lato-Italic.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Italic.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-Italic.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-Italic.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Italic.svg#Lato-Italic")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato Hairline";
+  src: url("./fonts/fonts/lato-montserrat/Lato-Hairline.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-Hairline.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Hairline.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-Hairline.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-Hairline.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Hairline.svg#Lato-Hairline")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-reg";
+  src: url("./fonts/fonts/lato-montserrat/Lato-Regular.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Regular.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-Regular.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-Regular.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-Regular.svg#Lato-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-italic";
+  src: url("./fonts/fonts/lato-montserrat/Lato-LightItalic.eot");
+  src: url("./fonts/fonts/lato-montserrat/Lato-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/lato-montserrat/Lato-LightItalic.woff2") format("woff2"),
+    url("./fonts/fonts/lato-montserrat/Lato-LightItalic.woff") format("woff"),
+    url("./fonts/fonts/lato-montserrat/Lato-LightItalic.ttf") format("truetype"),
+    url("./fonts/fonts/lato-montserrat/Lato-LightItalic.svg#Lato-LightItalic")
+      format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UbuntuBold";
+  src: url("./fonts/fonts/ubuntu/Ubuntu-Bold.eot");
+  src: url("./fonts/fonts/ubuntu/Ubuntu-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/fonts/ubuntu/Ubuntu-Bold.woff2") format("woff2"),
+    url("./fonts/fonts/ubuntu/Ubuntu-Bold.woff") format("woff"),
+    url("./fonts/fonts/ubuntu/Ubuntu-Bold.ttf") format("truetype"),
+    url("./fonts/fonts/ubuntu/Ubuntu-Bold.svg#Ubuntu-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./fonts/fonts/ubuntu/Ubuntu.eot");
+  src: url("./fonts/fonts/ubuntu/Ubuntu.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/fonts/ubuntu/Ubuntu.woff2") format("woff2"),
+    url("./fonts/fonts/ubuntu/Ubuntu.woff") format("woff"),
+    url("./fonts/fonts/ubuntu/Ubuntu.ttf") format("truetype"),
+    url("./fonts/fonts/ubuntu/Ubuntu.svg#Ubuntu") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Asimov";
   src: url("./fonts/fonts/asimov/AsimovNar.woff2") format("woff2"),
     url("./fonts/fonts/asimov/AsimovNar.woff") format("woff"),
@@ -432,6 +673,10 @@
 
 /* GENERAL */
 body {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+  font-size: 16px;
   font-family: sans-serif, Helvetica, Arial;
   margin-left: 0px;
   margin-top: 0px;
@@ -452,68 +697,55 @@ a {
 /* HEADER */
 header {
   margin: 0px;
-  position: relative;
 }
 header section {
   background-color: rgb(251, 251, 248);
+  display: flex;
   border-bottom: 2px solid grey;
   width: 100%;
-  height: 7.5vh;
+  justify-content: space-between;
+  align-items: baseline;
 }
-
+/* HEADER LOGO */
+header .header-logo {
+  display: flex;
+  padding: 10px;
+}
 header p {
   font-family: "ZT Gatha SemBd";
   letter-spacing: -0.01em;
   font-size: 2.5rem;
-  font-weight: 800;
-  margin: 0; /* Elimina el margen predeterminado */
-  position: absolute;
-  top: 15%;
-  left: 2%;
-  padding: 0;
+  margin: 0;
 }
-
 header p span:first-child {
   font-weight: 500;
   color: black;
 }
-
 header p span:nth-of-type(2) {
   color: #f0bc5e;
 }
-
 header p span:nth-of-type(3) {
   color: #ccc;
   font-size: 2rem;
 }
 
+/* HEADER MENU */
 header nav {
   font-family: "ZT Gatha SemBd";
-  margin: 0; /* Elimina márgenes predeterminados */
-  padding: 0; /* Elimina relleno predeterminado */
-  position: absolute;
-  top: 25%;
-  right: 2%;
+  padding-right: 10px;
 }
-
 header nav ul {
-  display: flex; /* Coloca los elementos en fila horizontal */
-  gap: 10%; /* Añade espacio entre los elementos */
-  margin: 0; /* Elimina márgenes */
-  padding: 0; /* Elimina relleno */
+  display: flex;
+  gap: 10px;
 }
-
 header nav ul li {
   list-style-type: none;
-  font-size: 1.5em;
+  font-size: 1.2rem;
 }
-
 header nav a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
 }
-
 header nav a:hover,
 a:hover {
   text-decoration: none;
@@ -522,17 +754,15 @@ a:hover {
 
 /* MAIN */
 main p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-main .first-text {
-  width: 45%;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
 main section h1 {
+  font-family: "Lato-light";
   font-size: 2em;
 }
 main section p {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 section.effectivity figure {
   margin: 1em;
@@ -547,6 +777,8 @@ section.effectivity {
 
 main section.first-text ul li {
   list-style-type: none;
+  font-family: "Montserrat-reg";
+  font-size: 1.1rem;
 }
 
 /* DETAILS */
@@ -583,63 +815,56 @@ details article {
 
 /* FOOTER */
 footer {
-  justify-content: space-between; /* Distribuye el h1 y el nav */
-  align-items: center; /* Alinea verticalmente los elementos */
-  background-color: rgb(251, 251, 248);
-  padding-bottom: 5rem;
-  border-top: 2px solid grey;
-  position: relative;
-  margin-top: 80vh;
-  padding-top: 1rem;
+  margin: 0px;
 }
-
+footer section {
+  background-color: rgb(251, 251, 248);
+  display: flex;
+  border-top: 2px solid grey;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+}
+/* FOOTER LOGO */
+footer .logo-footer {
+  display: flex;
+}
 footer p {
-  font-size: 2.4em;
-  margin: 0;
   font-family: "ZT Gatha SemBd";
   letter-spacing: -0.01em;
   font-size: 2.5rem;
-  font-weight: 800;
+  margin: 0;
+  padding: 10px;
 }
-
 footer p span:first-child {
-  font-weight: 500;
   color: black;
 }
-
 footer p span:nth-of-type(2) {
   color: #f0bc5e;
 }
-
 footer p span:nth-of-type(3) {
   color: #ccc;
   font-size: 2rem;
 }
 
-footer p span:nth-of-type(4) {
-  color: black;
-  font-size: small;
-  font-weight: 500;
-  width: auto;
-}
-
-footer p:nth-of-type(2) {
-  font-size: small;
-  width: 30%;
-}
-
+/* footer MENU */
 footer nav {
-  display: flex;
-  position: absolute;
-  right: 2%;
+  font-family: "ZT Gatha SemBd";
+  padding-right: 10px;
 }
-
-footer .gris {
-  color: grey;
+footer nav ul {
+  gap: 10px;
 }
-
-footer > .logo-footer {
-  position: absolute;
-  bottom: 100;
-  left: 2%;
+footer nav ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+footer nav a {
+  text-decoration: none;
+  color: black;
+}
+footer nav a:hover,
+a:hover {
+  text-decoration: none;
+  color: #f0bc5e;
 }
