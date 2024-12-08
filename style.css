@@ -880,7 +880,7 @@ section.landing1 {
 
 .logo-digitalks-ai {
   justify-self: center;
-  width: 500px; /* Ancho original de la imagen */
+  width: 350px; /* Ancho original de la imagen */
   height: auto; /* Mantener proporción original */
   object-fit: cover; /* Asegurar que la imagen llene el contenedor sin distorsionarse */
   object-position: center; /* Centrar la parte visible */
