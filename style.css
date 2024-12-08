@@ -865,6 +865,27 @@ section.landing1 {
   text-align: center;
 }
 
+.fgr-logo-digitalks-ai,
+.logo-digitalks-ai {
+  margin: 0;
+  padding: 0;
+}
+
+.fgr-logo-digitalks-ai {
+  justify-self: center;
+  height: 100px; /* Alto del área visible */
+  overflow: hidden; /* Ocultar el contenido fuera de este marco */
+  display: flex;
+}
+
+.logo-digitalks-ai {
+  justify-self: center;
+  width: 500px; /* Ancho original de la imagen */
+  height: auto; /* Mantener proporción original */
+  object-fit: cover; /* Asegurar que la imagen llene el contenedor sin distorsionarse */
+  object-position: center; /* Centrar la parte visible */
+}
+
 main p {
   font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
@@ -1040,6 +1061,12 @@ details article {
 
 .demos-iframes .audiodescripciones > iframe {
   margin: 0px 10px 10px 0px;
+}
+
+.demos-iframes article:first-child iframe {
+  border-radius: 50px;
+  width: 400px;
+  height: 60px;
 }
 
 /* CONTACTO */
