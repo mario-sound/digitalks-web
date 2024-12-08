@@ -27,264 +27,237 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="animated-header">
-      <div class="container">
-        <h1>
-          <span class="normal">#</span>Digi<span class="highlight-bold"
-            >Talks</span
-          >
-          AI
-        </h1>
+    <header id="home">
+      <section>
+        <label for="header-logo">
+          <a href="#home" class="header-logo">
+            <p><span>Digi</span><span>Talks</span><span>|ai</span></p>
+          </a>
+        </label>
         <nav>
           <ul>
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#contact-form">Contacto</a></li>
+            <li>
+              <a href="#home"><i class="icon-house"></i></a>
+            </li>
+            <li>
+              <a href="#demos"><i class=""></i>Demos</a>
+            </li>
+            <li>
+              <a href="#contact-form"><i class=""></i>Contacto</a>
+            </li>
           </ul>
         </nav>
-      </div>
+      </section>
     </header>
+    <main>
+      <section class="inicio">
+          <section class="first-text">
+            <h1>
+              Voces <span class="highlight">profesionales</span> generadas con
+              <span class="highlight">IA</span>
+            </h1>
+            <p>
+              Producimos voces de calidad
+              <strong>sin que nuestros clientes se arruinen.</strong> Y
+              nuestros profesionales tampoco.
+              Cuando juntas las
+              <span class="highlight">herramientas correctas</span> con las
+              <span class="highlight">personas correctas</span>, ocurren
+              grandes cosas.
+              No le demos más vueltas... La IA es
+              <span class="highlight">sólo una herramienta</span>.
+            </p>
+            <p><strong>Hacemos todo esto:</strong> (y más)</p>
+            <ul>
+              <li><a href="#demos">Audiolibros</a></li>
+              <li><a href="#demos">E-learnings</a></li>
+              <li><a href="#demos">Audioguias</a></li>
+              <li><a href="#demos">Audiodescripción</a></li >
+              <li><a href="#demos">Documentales</a></li>
+              <li><a href="#demos">Contenido RRSS</a></li>
+              <li><a href="#demos">Newsletters</a></li>
+            </ul>
+            <p><strong>Y sin duda, lo hacemos bien.</strong></p>
+          </section>
+        </section>
+      </section>
+      <section class="effectivity">
+        <figure>
+          <img src="images/fast-icon.png" alt="Rápido" width="100px" />
+          <figcaption>Rápido</figcaption>
+        </figure>
+        <figure>
+          <img src="images/reliable-icon.png" alt="Fiable" width="100px" />
+          <figcaption>Fiable</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/high-quality-icon.png"
+            alt="Alta Calidad"
+            width="100px"
+          />
+          <figcaption>Alta Calidad</figcaption>
+        </figure>
+      </section>
 
-    <div id="canvas-container"></div>
-    <!-- Contenedor para Lumiflex -->
 
-    <section id="hero" class="fade-in">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h2>
-            Voces <span class="highlight">profesionales</span> generadas con
-            <span class="highlight">IA</span>
-          </h2>
-          <p>
-            Producimos voces de calidad
-            <strong>sin que nuestros clientes se arruinen.</strong> Y nuestros
-            profesionales tampoco.
+    <section id="efficiency" class="fade-in" >
+      <h2>
+        <span class="highlight">Acelera x4</span> los
+        <span class="highlight">tiempos de producción</span> y<br />
+        reduce los <span class="highlight">costes</span> hasta
+        <span class="highlight">x3</span> veces.
+      </h2>
+      <details>
+        <summary><span>Ver más</span></summary>
+        <article>
+          <h2>Tradicional vs IA</h2>
+          <p class="subtitle">
+            Caso práctico de un <strong>Audiolibro</strong> de 10h
           </p>
-          <p>
-            Cuando juntas las
-            <span class="highlight">herramientas correctas</span> con las
-            <span class="highlight">personas correctas</span>, ocurren grandes
-            cosas.
-          </p>
-          <p>
-            No le demos más vueltas... La IA es
-            <span class="highlight">sólo una herramienta</span>.
-          </p>
-          <p><strong>Hacemos todo esto:</strong> (y más)</p>
+          <h3>Tradicional</h3>
           <ul>
-            <li><a href="#">Audiolibros</a></li>
-            <li><a href="#">E-learnings</a></li>
-            <li><a href="#">Audioguias</a></li>
-            <li><a href="#">Audiodescripción</a></li>
-            <li><a href="#">Documentales</a></li>
-            <li><a href="#">Contenido RRSS</a></li>
-            <li><a href="#">Newsletters</a></li>
+            <li>
+              <strong>35/40h</strong> de grabación con Actor/Técnico/Estudio
+            </li>
+            <li><strong>Tiempo de producción:</strong> 1 mes</li>
+            <li><strong>Estudio de sonido:</strong> Imprescindible</li>
+            <li><strong>Coste aprox.:</strong> 4k€</li>
           </ul>
-          <br />
-          <p><strong>Y sin duda, lo hacemos bien.</strong></p>
-        </div>
-        <div class="hero-image">
-          <img src="images/illustration.png" alt="Ilustración representativa" />
-        </div>
-      </div>
-      <div class="features">
-        <div class="feature-item">
-          <img src="images/fast-icon.png" alt="Rápido" />
-          <p>Rápido</p>
-        </div>
-        <div class="feature-item">
-          <img src="images/reliable-icon.png" alt="Fiable" />
-          <p>Fiable</p>
-        </div>
-        <div class="feature-item">
-          <img src="images/high-quality-icon.png" alt="Alta Calidad" />
-          <p>Alta Calidad</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="efficiency" class="fade-in">
-      <div class="container">
-        <h2>
-          <span class="highlight">Acelera x4</span> los
-          <span class="highlight">tiempos de producción</span> y<br />
-          reduce los <span class="highlight">costes</span> hasta
-          <span class="highlight">x3</span> veces.
-        </h2>
-        <button class="cta-button" type="button">Ver más</button>
-      </div>
+          <h3>IA</h3>
+          <ul>
+            <li><strong>15/20h</strong> de procesado a coste reducido</li>
+            <li><strong>Tiempo de producción:</strong> 1 semana</li>
+            <li><strong>Estudio de sonido:</strong> No requiere</li>
+            <li><strong>Coste aprox.:</strong> 1,5k€</li>
+          </ul>
+        </article>
+      </details>
     </section>
 
     <section id="human-ia" class="fade-in">
-      <div class="container">
-        <h2>
-          La <span class="highlight">IA</span> más
-          <span class="highlight">humana</span>.
-        </h2>
+      <h2>
+        La <span class="highlight">IA</span> más
+        <span class="highlight">humana</span>.
+      </h2>
+      <p>
+        Detrás de cada <strong>proyecto de voz generado por IA</strong>, hay
+        un <span class="highlight">equipo humano</span> con la
+        <span class="highlight">experiencia</span> y la
+        <span class="highlight">sensibilidad</span> necesaria para llevar tu
+        proyecto al siguiente nivel.
+      </p>
+    <section class="proceso-humania">
+      <figure>
+        <img
+        src="images/preparacion-texto.png"
+        alt="Preparación del texto"
+        width="200px"
+        />
         <p>
-          Detrás de cada <strong>proyecto de voz generado por IA</strong>, hay
-          un <span class="highlight">equipo humano</span> con la
-          <span class="highlight">experiencia</span> y la
-          <span class="highlight">sensibilidad</span> necesaria para llevar tu
-          proyecto al siguiente nivel.
+          Preparación del texto
         </p>
-        <div class="services-grid">
-          <div class="service-item">
-            <img
-              src="images/preparacion-texto.png"
-              alt="Preparación del texto"
-            />
-            <h3>
-              Preparación <br />
-              del texto
-            </h3>
-          </div>
-          <div class="service-item">
-            <img src="images/casting-voces.png" alt="Casting de voces" />
-            <h3>
-              Cásting de <br />
-              voces de alta calidad
-            </h3>
-          </div>
-          <div class="service-item">
-            <img
-              src="images/gestion-contratos.png"
-              alt="Gestión de contratos"
-            />
-            <h3>
-              Gestión de <br />
-              contratos y derechos
-            </h3>
-          </div>
-          <div class="service-item">
-            <img
-              src="images/revision-proyecto.png"
-              alt="Revisión del proyecto"
-            />
-            <h3>
-              Revisión <br />
-              del proyecto
-            </h3>
-          </div>
-        </div>
-      </div>
+      </figure>    
+    <figure>
+      <img
+      src="images/casting-voces.png"
+      alt="Casting de voces"
+      width="200px"
+    />
+    <p>
+      Cásting de voces de alta calidad
+    </p>
+    </figure>
+    <figure>
+      <img
+      src="images/gestion-contratos.png"
+      alt="Gestión de contratos"
+      width="200px"
+    />
+    <p>
+      Gestión de contratos y derechos
+    </p>
+    </figure>
+    <figure>
+      <img
+      src="images/revision-proyecto.png"
+      alt="Revisión del proyecto"
+      width="200px"
+    />
+    <p>
+      Revisión del proyecto
+    </p>
+    </figure>
     </section>
 
-    <section id="cta-more" class="fade-in">
-      <div class="container">
-        <h2>¡Quiero saber <span class="highlight">más!</span></h2>
-        <div class="cta-buttons">
-          <button class="cta-button-professional" type="button">
-            Soy Profesional
-          </button>
-          <button class="cta-button-company" type="button">Soy Empresa</button>
-        </div>
-      </div>
     </section>
 
-    <!-- Modal para "Soy Profesional" -->
-    <div id="modal-professional" class="modal">
-      <div class="modal-content">
-        <span class="close-button" data-modal="modal-professional"
-          >&times;</span
-        >
-        <h2>Información para Profesionales</h2>
-        <p>
-          Únete a <strong>DigiTalks AI</strong> y lleva tu talento al siguiente
-          nivel. Trabaja en proyectos variados como audiolibros, documentales y
-          contenido digital, con la <strong>flexibilidad</strong> de elegir tus
-          horarios y desde cualquier lugar. Aquí
-          <strong>respetamos tu tiempo y valoramos tu creatividad</strong>,
-          ofreciéndote herramientas de IA que <strong>potencian</strong> tu
-          productividad y honorarios justos que reconocen tu profesionalismo.
-          ¡Sé parte de la <strong>revolución</strong> de la voz profesional!
-        </p>
-      </div>
-    </div>
+    <section id="demos">
+      <h2>Escucha algunas de <span class="highlight">nuestras demos</span>.</h2>
+      <section class="demos-iframes">
+        <article>
+          <p>Nudista Investor - Manual de inversión para neófitos - Introducción</p>
+          <audio src="media/Nudista Investor - Manual de inversión para neófitos - Introducción.mp3" controls></audio>
+        </article>
+        <article>
+          <p>Manual de inversión para neófitos - 1. El nefasto futuro de las pensiones</p>
+        <audio src="media/Nudista Investor - Manual de inversión para neófitos - 1. El nefasto futuro de las pensiones.mp3" controls></audio>
+        </article>
+        <article>
+          <p>Manual de inversión para neófitos - 2. La inflación, el impuesto silencioso</p>
+        <audio src="media/Nudista Investor - Manual de inversión para neófitos - 2. La inflación, el impuesto silencioso .mp3" controls></audio>
+        </article>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/dp3eb2dQVgg?si=1AIgWCK0UGeI8gje"
+          title="Audiolibro demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/WwY5o-OSrGQ?si=gRozULNwiaWa748K" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/P4NcLz7UXUo?si=yZn2MRkXDsUXbijp"
+          title="E-learning demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
 
-    <!-- Modal para "Soy Empresa" -->
-    <div id="modal-company" class="modal">
-      <div class="modal-content">
-        <span class="close-button" data-modal="modal-company">&times;</span>
-        <h2>Información para Empresas</h2>
-        <p>
-          Confía en <strong>DigiTalks AI</strong> y lleva tus proyectos de voz
-          al siguiente nivel. Creamos contenido profesional como audiolibros,
-          documentales y guías digitales, combinando la
-          <strong>precisión de la IA</strong> con el talento humano. Nuestro
-          enfoque te garantiza resultados de alta calidad, optimizando tiempos y
-          costes sin comprometer la autenticidad. Aquí
-          <strong>convertimos tus ideas en experiencias sonoras únicas</strong>.
-          ¡Impulsa tu marca con la <strong>revolución</strong> de la voz
-          profesional!
-        </p>
-      </div>
-    </div>
-
-    <section id="contact-form" class="fade-in">
-      <div class="container">
-        <h2>¿Alguna <span class="highlight">duda?</span></h2>
-      </div>
-      <section>
-        Escríbenos aquí:
-        <address>info@digitalks.com</address>
+        </iframe>
       </section>
     </section>
 
+    <section id="contact-form" class="fade-in" >
+      <h2>¿Alguna <span class="highlight">duda?</span></h2>
+      <section>
+        Escríbenos aquí:
+        <address>digitalks01@proton.me</address>
+      </section>
+    </section>
+  </main>
     <footer id="site-footer">
-      <div class="container">
-        <div class="footer-logo">
-          <a href="index.html" class="footer-logo">
-            <h3>
-              <span class="normal">#</span>Digi<span class="highlight-bold"
-                >Talks</span
-              >
-              AI
-            </h3>
-            <p>
-              <span class="italic"
-                >Voces profesionales con Inteligencia Artificial</span
-              >
-            </p>
-          </a>
-        </div>
-        <div class="footer-links">
+      <section class="logo-footer">
+        <a href="#home" class="footer-logo">
+          <p><span>Digi</span><span>Talks</span><span>|ai</span></p>
+        </a>
+        <nav>
           <a href="privacy-policy.html">Política de privacidad</a>
           <a href="politica-cookies.html">Política de cookies</a>
           <a href="terms-conditions.html">Términos y condiciones</a>
-        </div>
-      </div>
+        </nav>
+      </section>
     </footer>
-
-    <div id="info-modal" class="modal">
-      <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h2>Tradicional vs IA</h2>
-        <p class="subtitle">Caso práctico de un Audiolibro de 10h</p>
-        <div class="comparison">
-          <div class="column">
-            <h3>Tradicional</h3>
-            <ul>
-              <li>
-                <strong>35/40h</strong> de grabación con Actor/Técnico/Estudio
-              </li>
-              <li><strong>Tiempo de producción:</strong> 1 mes</li>
-              <li><strong>Estudio de sonido:</strong> Imprescindible</li>
-              <li><strong>Coste aprox.:</strong> 4k€</li>
-            </ul>
-          </div>
-          <div class="column">
-            <h3>IA</h3>
-            <ul>
-              <li><strong>15/20h</strong> de procesado a coste reducido</li>
-              <li><strong>Tiempo de producción:</strong> 1 semana</li>
-              <li><strong>Estudio de sonido:</strong> No requiere</li>
-              <li><strong>Coste aprox.:</strong> 1,5k€</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
