@@ -671,6 +671,76 @@
   content: "\eae5";
 }
 
+/* RESPONSIVE MOVIL */
+html {
+  font-size: 16px; /* Base para pantallas grandes */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 24px; /* Tamaño más grande para móviles */
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.8rem; /* Ajusta el tamaño de encabezados */
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto normal */
+    line-height: 1.6;
+  }
+
+  li {
+    font-size: 1.1rem; /* Mejora la legibilidad de listas */
+  }
+}
+
+@media (max-width: 768px) {
+  header section,
+  footer section {
+    padding: 15px; /* Espacio más amplio en dispositivos pequeños */
+  }
+
+  main .inicio {
+    padding: 10px;
+    text-align: left; /* Mejor alineación del contenido */
+  }
+
+  .first-text ul li {
+    margin-bottom: 10px; /* Mejora la separación de listas */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  header,
+  main,
+  footer {
+    margin: 0 auto;
+    max-width: 100%; /* Evita márgenes innecesarios */
+  }
+}
+
+header nav ul li a,
+footer nav a {
+  font-size: 1.2rem; /* Incrementa el tamaño del texto */
+  padding: 10px; /* Añade espacio táctil */
+}
+
+header nav ul li a:hover {
+  color: #f0bc5e; /* Mejora el contraste en hover */
+}
+
 /* GENERAL */
 body {
   display: grid;
@@ -896,11 +966,24 @@ details article {
 
 .proceso-humania img {
   max-width: 80px;
+  width: auto; /* Asegura que el ancho se ajuste automáticamente */
+  max-width: 100%; /* Evita que exceda el contenedor */
+  height: auto; /* Mantiene la proporción */
+  display: block;
+  margin: auto; /* Centra la imagen */
 }
 
 .proceso-humania figure {
   flex: 1;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .proceso-humania figure p {
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+  }
 }
 
 /* DEMOS */
@@ -967,7 +1050,6 @@ footer p span:nth-of-type(3) {
 @media (max-width: 768px) {
   header section {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
