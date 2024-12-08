@@ -967,12 +967,17 @@ details article {
 .proceso-humania img {
   max-width: 80px;
   width: auto; /* Asegura que el ancho se ajuste automáticamente */
-  max-width: 100%; /* Evita que exceda el contenedor */
+  min-width: 40%; /* Evita que exceda el contenedor */
+  max-width: 40%; /* Evita que exceda el contenedor */
   height: auto; /* Mantiene la proporción */
   display: block;
   margin: auto; /* Centra la imagen */
 }
 
+.proceso-humania figure {
+  display: flex;
+  flex-flow: column;
+}
 .proceso-humania figure {
   flex: 1;
   text-align: center;
@@ -1050,6 +1055,7 @@ footer p span:nth-of-type(3) {
 @media (max-width: 768px) {
   header section {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
