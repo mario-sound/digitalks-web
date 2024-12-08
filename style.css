@@ -822,13 +822,32 @@ header nav a:hover {
 }
 
 /* MAIN */
+
 main .inicio {
   display: flex;
-  max-width: 100%;
   gap: 2rem;
   flex-wrap: wrap; /* Permite que los elementos se apilen si no hay espacio */
-  justify-content: center; /* Centra los elementos */
   text-align: center;
+}
+
+section.landing {
+  margin: 0;
+  padding: 0;
+}
+
+section.landing1 {
+  max-width: 80%;
+  margin: auto;
+}
+
+.landing1 .first-text p:nth-of-type(1),
+.landing1 .first-text p:nth-of-type(2),
+.landing1 .first-text p:nth-of-type(3),
+.landing1 .first-text p:nth-of-type(4),
+.landing1 .first-text p:nth-of-type(5),
+.landing1 .first-text p:nth-of-type(6) {
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 .inicio a:hover {
@@ -838,7 +857,6 @@ main .inicio {
 .first-text {
   max-width: 100%;
   padding: 10px;
-  padding-left: 2rem;
 }
 
 .home-pic {
@@ -910,7 +928,7 @@ details {
 details summary {
   justify-content: center;
   list-style: none;
-  cursor: pointer;
+  cursor: default;
   display: flex;
   margin-bottom: 10px;
 }
@@ -944,7 +962,15 @@ details article {
 }
 
 /* HUMAN IA */
+
+#human-ia h2,
+#human-ia p {
+  justify-self: center;
+}
+
 #human-ia {
+  max-width: 80%;
+  margin: auto;
   font-family: "Ubuntu";
   border-top: 1px rgb(251, 251, 248) solid;
   padding: 10px;
@@ -998,14 +1024,22 @@ details article {
   padding: 10px;
 }
 
-#demos h2 {
+#demos h2,
+#demos h3 {
   font-family: "Lato-light";
 }
 
 .demos-iframes {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   row-gap: 10px;
+  gap: 100px;
+  margin: 2rem;
+}
+
+.demos-iframes .audiodescripciones > iframe {
+  margin: 0px 10px 10px 0px;
 }
 
 /* CONTACTO */
