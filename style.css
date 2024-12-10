@@ -1,4 +1,244 @@
 @font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Italic.eot");
+  src: url("Poppins-Italic.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-Italic.woff2") format("woff2"),
+    url("Poppins-Italic.woff") format("woff"),
+    url("Poppins-Italic.ttf") format("truetype"),
+    url("Poppins-Italic.svg#Poppins-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-ExtraBoldItalic.eot");
+  src: url("Poppins-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-ExtraBoldItalic.woff2") format("woff2"),
+    url("Poppins-ExtraBoldItalic.woff") format("woff"),
+    url("Poppins-ExtraBoldItalic.ttf") format("truetype"),
+    url("Poppins-ExtraBoldItalic.svg#Poppins-ExtraBoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("./fonts/fonts/Poppins-Bold.eot");
+  src: url("./fonts/fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/fonts/Poppins-Bold.woff2") format("woff2"),
+    url("./fonts/fonts/Poppins-Bold.woff") format("woff"),
+    url("./fonts/fonts/Poppins-Bold.ttf") format("truetype"),
+    url("./fonts/fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-black";
+  src: url("fonts/fonts/poppins/Poppins-Black.eot");
+  src: url("fonts/fonts/poppins/Poppins-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/fonts/poppins/Poppins-Black.woff2") format("woff2"),
+    url("fonts/fonts/poppins/Poppins-Black.woff") format("woff"),
+    url("fonts/fonts/poppins/Poppins-Black.ttf") format("truetype"),
+    url("fonts/fonts/poppins/Poppins-Black.svg#Poppins-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-ExtraLightItalic.eot");
+  src: url("Poppins-ExtraLightItalic.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-ExtraLightItalic.woff2") format("woff2"),
+    url("Poppins-ExtraLightItalic.woff") format("woff"),
+    url("Poppins-ExtraLightItalic.ttf") format("truetype"),
+    url("Poppins-ExtraLightItalic.svg#Poppins-ExtraLightItalic") format("svg");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-boldextra";
+  src: url("fonts/fonts/poppins/Poppins-ExtraBold.eot");
+  src: url("fonts/fonts/poppins/Poppins-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/fonts/poppins/Poppins-ExtraBold.woff2") format("woff2"),
+    url("fonts/fonts/poppins/Poppins-ExtraBold.woff") format("woff"),
+    url("fonts/fonts/poppins/Poppins-ExtraBold.ttf") format("truetype"),
+    url("fonts/fonts/poppins/Poppins-ExtraBold.svg#Poppins-ExtraBold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-BlackItalic.eot");
+  src: url("Poppins-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-BlackItalic.woff2") format("woff2"),
+    url("Poppins-BlackItalic.woff") format("woff"),
+    url("Poppins-BlackItalic.ttf") format("truetype"),
+    url("Poppins-BlackItalic.svg#Poppins-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-BoldItalic.eot");
+  src: url("Poppins-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-BoldItalic.woff2") format("woff2"),
+    url("Poppins-BoldItalic.woff") format("woff"),
+    url("Poppins-BoldItalic.ttf") format("truetype"),
+    url("Poppins-BoldItalic.svg#Poppins-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-ExtraLight.eot");
+  src: url("Poppins-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-ExtraLight.woff2") format("woff2"),
+    url("Poppins-ExtraLight.woff") format("woff"),
+    url("Poppins-ExtraLight.ttf") format("truetype"),
+    url("Poppins-ExtraLight.svg#Poppins-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-ThinItalic.eot");
+  src: url("Poppins-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-ThinItalic.woff2") format("woff2"),
+    url("Poppins-ThinItalic.woff") format("woff"),
+    url("Poppins-ThinItalic.ttf") format("truetype"),
+    url("Poppins-ThinItalic.svg#Poppins-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Regular.eot");
+  src: url("Poppins-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-Regular.woff2") format("woff2"),
+    url("Poppins-Regular.woff") format("woff"),
+    url("Poppins-Regular.ttf") format("truetype"),
+    url("Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-MediumItalic.eot");
+  src: url("Poppins-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-MediumItalic.woff2") format("woff2"),
+    url("Poppins-MediumItalic.woff") format("woff"),
+    url("Poppins-MediumItalic.ttf") format("truetype"),
+    url("Poppins-MediumItalic.svg#Poppins-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-med";
+  src: url("fonts/fonts/poppins/Poppins-Medium.eot");
+  src: url("fonts/fonts/poppins/Poppins-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/fonts/poppins/Poppins-Medium.woff2") format("woff2"),
+    url("fonts/fonts/poppins/Poppins-Medium.woff") format("woff"),
+    url("fonts/fonts/poppins/Poppins-Medium.ttf") format("truetype"),
+    url("fonts/fonts/poppins/Poppins-Medium.svg#Poppins-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Thin.eot");
+  src: url("Poppins-Thin.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-Thin.woff2") format("woff2"),
+    url("Poppins-Thin.woff") format("woff"),
+    url("Poppins-Thin.ttf") format("truetype"),
+    url("Poppins-Thin.svg#Poppins-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-LightItalic.eot");
+  src: url("Poppins-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-LightItalic.woff2") format("woff2"),
+    url("Poppins-LightItalic.woff") format("woff"),
+    url("Poppins-LightItalic.ttf") format("truetype"),
+    url("Poppins-LightItalic.svg#Poppins-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-sembold";
+  src: url("fonts/fonts/poppins/Poppins-SemiBold.eot");
+  src: url("fonts/fonts/poppins/Poppins-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/fonts/poppins/Poppins-SemiBold.woff2") format("woff2"),
+    url("fonts/fonts/poppins/Poppins-SemiBold.woff") format("woff"),
+    url("fonts/fonts/poppins/Poppins-SemiBold.ttf") format("truetype"),
+    url("fonts/fonts/poppins/Poppins-SemiBold.svg#Poppins-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-SemiBoldItalic.eot");
+  src: url("Poppins-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-SemiBoldItalic.woff2") format("woff2"),
+    url("Poppins-SemiBoldItalic.woff") format("woff"),
+    url("Poppins-SemiBoldItalic.ttf") format("truetype"),
+    url("Poppins-SemiBoldItalic.svg#Poppins-SemiBoldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Light.eot");
+  src: url("Poppins-Light.eot?#iefix") format("embedded-opentype"),
+    url("Poppins-Light.woff2") format("woff2"),
+    url("Poppins-Light.woff") format("woff"),
+    url("Poppins-Light.ttf") format("truetype"),
+    url("Poppins-Light.svg#Poppins-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Montserrat-reg";
   src: url("./fonts/fonts/lato-montserrat/Montserrat-Regular.eot");
   src: url("./fonts/fonts/lato-montserrat/Montserrat-Regular.eot?#iefix")
@@ -704,11 +944,10 @@ html {
 @media (max-width: 768px) {
   header section,
   footer section {
-    padding: 15px; /* Espacio más amplio en dispositivos pequeños */
+    padding: 10px; /* Espacio más amplio en dispositivos pequeños */
   }
 
   main .inicio {
-    padding: 10px;
     text-align: left; /* Mejor alineación del contenido */
   }
 
@@ -734,11 +973,10 @@ html {
 header nav ul li a,
 footer nav a {
   font-size: 1.2rem; /* Incrementa el tamaño del texto */
-  padding: 10px; /* Añade espacio táctil */
 }
 
 header nav ul li a:hover {
-  color: #f0bc5e; /* Mejora el contraste en hover */
+  color: #ffd133; /* Mejora el contraste en hover */
 }
 
 /* GENERAL */
@@ -746,11 +984,12 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  font-size: 16px;
+  font-size: 18px;
   font-family: sans-serif, Helvetica, Arial;
   margin: 0;
   padding: 0;
   max-width: 100%;
+  background-color: white;
 }
 
 img {
@@ -764,8 +1003,13 @@ a {
 }
 
 .highlight {
-  color: #f0bc5e;
+  color: #ffd133;
   font-weight: bold;
+  font-size: 1.1em;
+}
+
+strong {
+  font-size: 1.1em;
 }
 
 /* HEADER */
@@ -773,28 +1017,28 @@ header {
   margin: 0;
 }
 header section {
-  background-color: rgb(251, 251, 248);
+  background-color: rgb(0, 0, 0);
   display: flex;
-  border-bottom: 2px solid grey;
   justify-content: space-between;
   align-items: baseline;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 header .header-logo {
   display: flex;
   align-items: center;
 }
 header p {
-  font-family: "ZT Gatha SemBd";
-  font-size: clamp(1.8rem, 3vw, 2.5rem); /* Tamaño fluido */
+  font-family: "Poppins-sembold";
+  font-size: clamp(2rem, 2vw, 2rem); /* Tamaño fluido */
+  letter-spacing: -0.08rem;
   margin: 0;
 }
 header p span:first-child {
-  font-weight: 500;
-  color: black;
+  font-weight: 600;
+  color: #ffd133;
 }
 header p span:nth-of-type(2) {
-  color: #f0bc5e;
+  color: white;
 }
 header p span:nth-of-type(3) {
   color: #ccc;
@@ -803,7 +1047,10 @@ header p span:nth-of-type(3) {
 
 /* NAVIGATION */
 header nav {
-  font-family: "ZT Gatha SemBd";
+  font-family: "Poppins-med";
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 header nav ul {
   display: flex;
@@ -815,12 +1062,16 @@ header nav ul li {
 }
 header nav a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 header nav a:hover {
-  color: #f0bc5e;
+  color: #ffd133;
 }
-
+.icono.mundo {
+  width: 5rem;
+  fill: #ccc;
+  font-size: 10px;
+}
 /* MAIN */
 
 main .inicio {
@@ -840,6 +1091,12 @@ section.landing1 {
   margin: auto;
 }
 
+.first-text,
+.inicio {
+  margin: 0;
+  padding: 0;
+}
+
 .landing1 .first-text p:nth-of-type(1),
 .landing1 .first-text p:nth-of-type(2),
 .landing1 .first-text p:nth-of-type(3),
@@ -850,19 +1107,61 @@ section.landing1 {
   text-align: left;
 }
 
+.landing2 ul {
+  margin: 0;
+  padding: 0;
+}
+
 .inicio a:hover {
-  color: #f0bc5e;
+  color: #ffd133;
 }
 
 .first-text {
   max-width: 100%;
-  padding: 10px;
+}
+
+.inicio {
+  padding: 0;
+  margin: 0;
 }
 
 .home-pic {
   max-width: 100%;
   justify-content: center;
   text-align: center;
+}
+
+.hacemosesto {
+  display: flex;
+  flex-direction: column;
+}
+
+.digitalks-logo {
+  margin: 0;
+  padding: 0;
+}
+.digitalks-logo > p span:first-child {
+  font-size: clamp(2rem, 3vw, 3rem); /* Tamaño fluido */
+  letter-spacing: -0.08rem;
+  margin: 0;
+  font-family: "Poppins-sembold";
+  font-weight: 600;
+  color: #ffd133;
+}
+.digitalks-logo > p span:nth-of-type(2) {
+  font-size: clamp(2rem, 3vw, 3rem); /* Tamaño fluido */
+  letter-spacing: -0.08rem;
+  margin: 0;
+  font-family: "Poppins-sembold";
+  color: black;
+}
+.digitalks-logo > p span:nth-of-type(3) {
+  font-size: clamp(2rem, 3vw, 3rem); /* Tamaño fluido */
+  letter-spacing: -0.08rem;
+  margin: 0;
+  font-family: "Poppins-sembold";
+  color: #ccc;
+  font-size: clamp(1.2rem, 2.5vw, 2rem); /* Tamaño fluido */
 }
 
 .fgr-logo-digitalks-ai,
@@ -891,8 +1190,11 @@ main p {
 }
 
 main section h1 {
-  font-family: "Lato-light";
-  font-size: clamp(1.5rem, 2.5vw, 2em); /* Tamaño fluido */
+  font-family: "Poppins-med";
+  font-size: clamp(1.5rem, 3.5vw, 4rem); /* Tamaño fluido */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
 }
 main section p {
   font-size: clamp(0.9rem, 2vw, 1em); /* Tamaño fluido */
@@ -906,12 +1208,18 @@ section.effectivity {
   align-items: center;
   font-weight: bold;
   text-align: center;
-  flex-wrap: wrap; /* Permite apilar elementos si no hay espacio */
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
 }
 
 .effectivity figure {
   margin: 0;
   padding: 0;
+  padding-top: 1rem;
+}
+
+.effectivity figure img {
+  width: 70px;
 }
 
 main section.first-text ul li {
@@ -925,6 +1233,48 @@ main section.first-text ul li {
   display: flex;
   flex-direction: column;
 }
+.hook.rapidos i {
+  font-size: 1rem;
+}
+
+.hook.naturales i {
+  font-size: 2rem;
+}
+.hook {
+  margin: 0;
+  padding: 0;
+  border-top: #ffd133 1px solid;
+  border-bottom: #ffd133 1px solid;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  color: grey;
+  font-size: 1.3rem;
+}
+
+.hook.naturales {
+  background-color: #ffd133;
+  padding: 30px;
+  border: 0px;
+  color: black;
+  font-size: 1.7rem;
+}
+.hook.naturales span {
+  color: white;
+}
+
+.hook.suenabien strong:nth-of-type(1) {
+  font-size: 1.4rem;
+}
+.hook.suenabien {
+  display: flex;
+}
+.hook.suenabien p {
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+}
+
 section#efficiency h2,
 section#efficiency details {
   margin: auto;
@@ -955,7 +1305,7 @@ details summary {
 }
 
 details summary span {
-  background-color: #f0bc5e;
+  background-color: #ffd133;
   color: rgb(251, 251, 248);
   padding: 10px;
   border-radius: 20px;
@@ -965,8 +1315,8 @@ details summary span {
 
 details summary span:hover {
   background-color: rgb(251, 251, 248);
-  color: #f0bc5e;
-  outline: #f0bc5e 1px solid;
+  color: #ffd133;
+  outline: #ffd133 1px solid;
   transition: 0.5s ease;
 }
 
@@ -1043,30 +1393,90 @@ details article {
 #demos {
   font-family: "Ubuntu";
   padding: 10px;
+  background-color: #000000;
+  padding-left: 25px;
+  padding-bottom: 2rem;
+}
+
+.iconomundo {
+  width: 5rem;
+  fill: white;
+}
+.iconomundo .cls-1 {
+  fill: #ffd133;
+}
+.iconomundo:hover {
+  fill: #ccc;
+}
+.iconomundo .cls-1:hover {
+  fill: white;
 }
 
 #demos h2,
 #demos h3 {
   font-family: "Lato-light";
+  color: white;
 }
 
 .demos-iframes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   row-gap: 10px;
-  gap: 100px;
-  margin: 2rem;
+}
+
+.demos-iframes h3,
+.demos-iframes article iframe {
+  margin: 0;
+  padding: 0;
+}
+
+.demos-iframes .audiolibros,
+.demos-iframes .audiodescripciones,
+.demos-iframes .demo-rrss,
+.demos-iframes .elearnings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .demos-iframes .audiodescripciones > iframe {
   margin: 0px 10px 10px 0px;
 }
 
-.demos-iframes article:first-child iframe {
+.demos-iframes article p,
+.demos-iframes .demo-rrss > p {
+  margin: 0;
+  padding-bottom: 10px;
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.demos-iframes .demo-rrss > p:first-child {
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+.demos-iframes h3 {
+  padding-top: 50px;
+}
+
+.demos-iframes .demo-rrss {
+  display: flex;
+}
+
+.demos-iframes article.audiodescripciones iframe,
+.demos-iframes article.elearnings iframe,
+.demos-iframes article.audiolibros iframe,
+.demos-iframes article.demo-rrss iframe {
   border-radius: 50px;
   width: 400px;
   height: 60px;
+}
+
+.demo-rrss p > span,
+.audiolibros p > span {
+  color: white;
 }
 
 /* CONTACTO */
@@ -1074,6 +1484,13 @@ details article {
 #contact-form {
   font-family: "Ubuntu";
   padding: 10px;
+  margin: auto;
+  justify-content: center;
+}
+
+#contact-form section {
+  display: flex;
+  flex-direction: column;
 }
 
 #contact-form h2 {
@@ -1084,30 +1501,49 @@ details article {
 /* FOOTER */
 footer {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+  align-items: baseline;
 }
+
 footer section {
-  background-color: rgb(251, 251, 248);
   display: flex;
   flex-wrap: wrap; /* Adaptar elementos en pantallas pequeñas */
-  border-top: 2px solid grey;
   justify-content: space-between;
   align-items: baseline;
 }
 footer p {
-  font-family: "ZT Gatha SemBd";
-  font-size: clamp(1.8rem, 3vw, 2.5rem); /* Tamaño fluido */
+  font-family: "Poppins-sembold";
+  font-size: clamp(2rem, 3vw, 3rem); /* Tamaño fluido */
+  letter-spacing: -0.08rem;
   margin: 0;
-  padding: 10px;
 }
 footer p span:first-child {
-  color: black;
+  font-weight: 600;
+  color: #ffd133;
 }
 footer p span:nth-of-type(2) {
-  color: #f0bc5e;
+  color: white;
 }
 footer p span:nth-of-type(3) {
   color: #ccc;
   font-size: clamp(1.2rem, 2.5vw, 2rem); /* Tamaño fluido */
+}
+
+footer nav {
+  padding: 1rem;
+}
+footer nav a {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+footer nav a:hover {
+  margin: 0;
+  padding: 0;
+  color: #ffd133;
 }
 
 /* RESPONSIVE DESIGN */
@@ -1124,6 +1560,7 @@ footer p span:nth-of-type(3) {
     flex-direction: column; /* Apila los elementos del menú */
     gap: 10px;
     align-items: center;
+    padding-left: 0;
   }
 
   footer section {
@@ -1134,6 +1571,14 @@ footer p span:nth-of-type(3) {
   section.effectivity {
     flex-direction: column; /* Adaptar contenido */
   }
+}
+
+.demos-iframes article section {
+  display: flex;
+  flex-direction: column;
+}
+.demos-iframes article iframe {
+  justify-content: center;
 }
 
 /* Pantallas medianas (tabletas) */
@@ -1159,10 +1604,10 @@ footer p span:nth-of-type(3) {
 /* Pantallas grandes (escritorios) */
 @media (min-width: 1025px) {
   header section {
-    padding: 20px 50px; /* Añadir espacio extra */
+    padding: 10px 50px; /* Añadir espacio extra */
   }
 
   footer section {
-    padding: 20px 50px;
+    padding: 10px 50px;
   }
 }
