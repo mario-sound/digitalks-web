@@ -1067,18 +1067,12 @@ header nav a {
 header nav a:hover {
   color: #ffd133;
 }
-.icono.mundo {
-  width: 5rem;
-  fill: #ccc;
-  font-size: 10px;
-}
+
 /* MAIN */
 
 main .inicio {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap; /* Permite que los elementos se apilen si no hay espacio */
   text-align: center;
+  max-width: 100%;
 }
 
 section.landing {
@@ -1107,9 +1101,72 @@ section.landing1 {
   text-align: left;
 }
 
-.landing2 ul {
-  margin: 0;
+.landing2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+@media (max-width: 768px) {
+  .landing2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.suenabien {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0.1rem 0 5rem 0;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .suenabien {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 10px;
+    padding: 0.1rem 1rem 0 1rem;
+    font-size: 3rem;
+  }
+}
+.icon-earbuds {
+  color: grey;
+}
+.icon-earbuds:hover {
+  color: #ccc;
+}
+
+.suenabien > p {
   padding: 0;
+  margin: 0;
+}
+.suenabien > p:first-child {
+  padding-top: 3rem;
+}
+
+.suenabien ul {
+  margin: 0;
+  padding: 1rem 0 1rem 0;
+}
+
+.iconsvg.play-figure {
+  max-width: 15rem;
+  min-width: 6rem;
+  width: 15rem;
+}
+
+@media (max-width: 768px) {
+  .iconsvg.play-figure {
+    width: 6rem;
+    padding: 1rem 0 2rem 0;
+  }
 }
 
 .inicio a:hover {
@@ -1205,7 +1262,7 @@ section.effectivity {
   background-image: linear-gradient(white, rgb(251, 251, 248));
   justify-content: center;
   gap: 5%;
-  align-items: center;
+  align-items: baseline;
   font-weight: bold;
   text-align: center;
   flex-wrap: wrap;
@@ -1216,10 +1273,24 @@ section.effectivity {
   margin: 0;
   padding: 0;
   padding-top: 1rem;
+  width: 100px;
+  justify-content: baseline;
+  align-items: baseline;
 }
 
-.effectivity figure img {
-  width: 70px;
+/* ICONOS GENERAL */
+/* borde iconos */
+figure.iconsvg {
+  width: 90px;
+  fill: black;
+}
+/* relleno iconos */
+figure.iconsvg .cls-1 {
+  fill: #ffd133;
+}
+/* relleno iconos */
+figure.iconsvg .cls-1:hover {
+  fill: #ffffff;
 }
 
 main section.first-text ul li {
@@ -1236,7 +1307,12 @@ main section.first-text ul li {
 .hook.rapidos i {
   font-size: 1rem;
 }
-
+@media (max-width: 768px) {
+  .hook.rapidos {
+    font-size: 1rem;
+    padding: 0 1rem 0 1rem;
+  }
+}
 .hook.naturales i {
   font-size: 2rem;
 }
@@ -1263,16 +1339,56 @@ main section.first-text ul li {
   color: white;
 }
 
-.hook.suenabien strong:nth-of-type(1) {
-  font-size: 1.4rem;
-}
-.hook.suenabien {
+.hook.sitelodijeramos {
   display: flex;
+  border-bottom: none;
+  position: relative;
+  padding-bottom: 0;
 }
-.hook.suenabien p {
+.hook.sitelodijeramos p span {
+  font-size: 2.4rem;
+}
+.hook.sitelodijeramos p {
   justify-content: center;
   margin: auto;
+  padding-top: 0;
   padding: 0;
+  color: #000000;
+  font-size: 2.5rem;
+}
+.hook.sitelodijeramos ~ .quote {
+  right: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 25rem;
+  padding-bottom: 10px;
+  color: grey;
+}
+
+@media (max-width: 768px) {
+  .hook.sitelodijeramos ~ .quote {
+    right: 0%;
+    padding-left: 1rem;
+  }
+}
+
+.iconsvg.arrow-figure {
+  position: absolute;
+  left: 60%;
+  transform: translate(15rem, -51%) rotate(350deg);
+  height: auto;
+}
+@media (max-width: 768px) {
+  .iconsvg.arrow-figure {
+    position: absolute;
+    left: 60%;
+    transform: translate(12rem, -51%) rotate(350deg);
+    height: auto;
+  }
+}
+
+.iconsvg.arrow-figure .cls-1:hover {
+  fill: #ccc;
 }
 
 section#efficiency h2,
@@ -1282,54 +1398,82 @@ section#efficiency details {
 
 /* DETAILS */
 #efficiency h2 {
-  padding: 10px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem 0 2rem 0;
   font-family: "Lato-light";
 }
 #efficiency {
   font-family: "Ubuntu";
 }
 
-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-details summary {
-  justify-content: center;
-  list-style: none;
-  cursor: default;
-  display: flex;
-  margin-bottom: 10px;
-}
-
-details summary span {
-  background-color: #ffd133;
-  color: rgb(251, 251, 248);
-  padding: 10px;
-  border-radius: 20px;
-  margin-bottom: 1%;
-  text-align: center;
-}
-
-details summary span:hover {
-  background-color: rgb(251, 251, 248);
-  color: #ffd133;
-  outline: #ffd133 1px solid;
-  transition: 0.5s ease;
-}
-
-details article {
-  display: flex;
-  flex-direction: column;
-  color: black;
-  text-align: center;
-  padding-right: 25px;
-}
-
 #efficiency li {
   list-style-type: none;
+}
+
+.comparativa {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5rem;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  background-color: rgb(251, 251, 248);
+}
+
+@media (max-width: 768px) {
+  .comparativa {
+    gap: 1rem;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color: rgb(251, 251, 248);
+  }
+}
+
+.digitalks-logo p span.color-black {
+  color: #000000;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .digitalks-logo p span.color-black {
+    color: #000000;
+    font-size: 1.5rem;
+  }
+}
+
+.comparativatradicional {
+  position: relative;
+}
+
+.comparativatradicional p,
+.comparativatradicional ul {
+  z-index: 3;
+  position: relative;
+}
+
+.iconsvg.xfigure {
+  position: absolute;
+  transform: translate(5rem, -16rem) rotate(100deg);
+  max-width: 10rem;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .iconsvg.xfigure {
+    position: absolute;
+    transform: translate(4rem, -16rem) rotate(100deg);
+    max-width: 4rem;
+    opacity: 0.3;
+    z-index: 0;
+  }
+}
+
+.iconsvg.xfigure .cls-1:hover {
+  fill: red;
+  opacity: 0.3;
 }
 
 /* HUMAN IA */
@@ -1343,6 +1487,7 @@ details article {
   max-width: 80%;
   margin: auto;
   font-family: "Ubuntu";
+  font-size: 1.4rem;
   border-top: 1px rgb(251, 251, 248) solid;
   padding: 10px;
 }
@@ -1355,22 +1500,32 @@ details article {
 .proceso-humania {
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 
 .proceso-humania figure {
   display: flex;
 }
 
-.proceso-humania img {
-  max-width: 80px;
-  width: auto; /* Asegura que el ancho se ajuste automáticamente */
-  min-width: 40%; /* Evita que exceda el contenedor */
-  max-width: 40%; /* Evita que exceda el contenedor */
-  height: auto; /* Mantiene la proporción */
-  display: block;
+.proceso-humania svg {
   margin: auto; /* Centra la imagen */
 }
 
+.iconsvg.texto-figure svg,
+.iconsvg.bocavox-figure svg,
+.iconsvg.lapiz-figure svg,
+.iconsvg.brain-figure svg {
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .iconsvg.texto-figure svg,
+  .iconsvg.bocavox-figure svg,
+  .iconsvg.lapiz-figure svg,
+  .iconsvg.brain-figure svg {
+    height: 65px;
+  }
+}
 .proceso-humania figure {
   display: flex;
   flex-flow: column;
@@ -1396,20 +1551,6 @@ details article {
   background-color: #000000;
   padding-left: 25px;
   padding-bottom: 2rem;
-}
-
-.iconomundo {
-  width: 5rem;
-  fill: white;
-}
-.iconomundo .cls-1 {
-  fill: #ffd133;
-}
-.iconomundo:hover {
-  fill: #ccc;
-}
-.iconomundo .cls-1:hover {
-  fill: white;
 }
 
 #demos h2,
@@ -1470,7 +1611,7 @@ details article {
 .demos-iframes article.audiolibros iframe,
 .demos-iframes article.demo-rrss iframe {
   border-radius: 50px;
-  width: 400px;
+  max-width: 400px;
   height: 60px;
 }
 
@@ -1488,9 +1629,27 @@ details article {
   justify-content: center;
 }
 
-#contact-form section {
+#contact-form > section {
+  font-size: larger;
+  text-align: center;
+}
+#contact-form {
   display: flex;
   flex-direction: column;
+}
+#contact-form > section:nth-of-type(2) {
+  justify-self: center;
+  text-align: center;
+}
+
+#contact-form address:hover {
+  color: grey;
+  cursor: alias;
+}
+
+.iconsvg.sobre-figure {
+  justify-self: center;
+  max-width: 15%;
 }
 
 #contact-form h2 {
@@ -1566,10 +1725,6 @@ footer nav a:hover {
   footer section {
     flex-direction: column; /* Apilar elementos del footer */
     text-align: center;
-  }
-
-  section.effectivity {
-    flex-direction: column; /* Adaptar contenido */
   }
 }
 
