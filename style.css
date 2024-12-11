@@ -1291,6 +1291,9 @@ figure.iconsvg {
 figure.iconsvg .cls-1 {
   fill: #ffd133;
 }
+figure.iconsvg .cls-2 {
+  fill: black;
+}
 /* relleno iconos */
 figure.iconsvg .cls-1:hover {
   fill: #ffffff;
@@ -1603,16 +1606,23 @@ section#efficiency details {
 .demos-iframes .elearnings {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 0 15rem 0 3rem;
 }
 
 .demos-iframes .audiodescripciones > iframe {
   margin: 0px 10px 10px 0px;
 }
 
+.demos-iframes article.audiodescripciones .iframes-ad {
+  gap: 15px;
+}
+
 .demos-iframes article p,
 .demos-iframes .demo-rrss > p {
   margin: 0;
+  padding-top: 15px;
   padding-bottom: 10px;
   color: grey;
   font-size: 0.9rem;
@@ -1627,10 +1637,6 @@ section#efficiency details {
   padding-top: 50px;
 }
 
-.demos-iframes .demo-rrss {
-  display: flex;
-}
-
 .demos-iframes article.audiodescripciones iframe,
 .demos-iframes article.elearnings iframe,
 .demos-iframes article.audiolibros iframe,
@@ -1643,6 +1649,46 @@ section#efficiency details {
 .demo-rrss p > span,
 .audiolibros p > span {
   color: white;
+}
+
+.iconsvg.web-figure .cls-1 {
+  fill: white;
+}
+
+article.demo-rrss {
+  display: flex;
+}
+
+.demos-iframes .iconsvg {
+  width: 15rem;
+  align-self: center;
+}
+.demos-iframes .iconsvg.audio-description .cls-1 {
+  fill: #ffd133;
+}
+.demos-iframes .iconsvg.audio-description .cls-1:hover {
+  fill: white;
+}
+.demos-iframes .iconsvg.libro-figure {
+  fill: #ffd133;
+}
+.demos-iframes .iconsvg.libro-figure .cls-1 {
+  fill: black;
+}
+.demos-iframes .iconsvg.libro-figure .cls-1:hover {
+  fill: white;
+}
+.demos-iframes .iconsvg.web-figure .cls-1 {
+  fill: #ffd133;
+}
+.demos-iframes .iconsvg.web-figure .cls-1:hover {
+  fill: white;
+}
+.demos-iframes .iconsvg.mundo-figure2 .cls-2 {
+  fill: #ffd133;
+}
+.demos-iframes .iconsvg.mundo-figure2 .cls-1:hover {
+  fill: white;
 }
 
 /* CONTACTO */
