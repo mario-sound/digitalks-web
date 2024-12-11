@@ -1562,7 +1562,7 @@ section#efficiency details {
   padding: 10px;
   background-color: #000000;
   padding-left: 25px;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 #demos h2,
@@ -1585,8 +1585,8 @@ section#efficiency details {
   .demos-iframes article,
   .demos-iframes .demo-rrss > p:first-child,
   .demos-iframes article section {
-    margin: auto; /* Asegura que el resto de los elementos se mantengan centrados */
-    display: block;
+    margin: auto;
+    padding: 0;
   }
 
   .demos-iframes {
@@ -1598,6 +1598,7 @@ section#efficiency details {
 .demos-iframes article iframe {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .demos-iframes .audiolibros,
@@ -1606,11 +1607,22 @@ section#efficiency details {
 .demos-iframes .elearnings {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-  justify-content: space-between;
-  padding: 0 15rem 0 3rem;
+  gap: 200px;
+  justify-content: space-evenly;
+  padding: 0 10rem 0 5rem;
 }
-
+@media (max-width: 768px) {
+  .demos-iframes .audiolibros,
+  .demos-iframes .audiodescripciones,
+  .demos-iframes .demo-rrss,
+  .demos-iframes .elearnings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10rem 0 5rem;
+  }
+}
 .demos-iframes .audiodescripciones > iframe {
   margin: 0px 10px 10px 0px;
 }
@@ -1662,6 +1674,12 @@ article.demo-rrss {
 .demos-iframes .iconsvg {
   width: 15rem;
   align-self: center;
+}
+@media (max-width: 768px) {
+  .demos-iframes .iconsvg {
+    width: 5rem;
+    align-self: center;
+  }
 }
 .demos-iframes .iconsvg.audio-description .cls-1 {
   fill: #ffd133;
