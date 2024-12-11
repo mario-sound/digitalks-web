@@ -1473,7 +1473,7 @@ section#efficiency details {
 @media (max-width: 768px) {
   .iconsvg.xfigure {
     position: absolute;
-    transform: translate(6rem, -15rem) rotate(100deg);
+    transform: translate(6rem, -12rem) rotate(100deg);
     max-width: 4rem;
     opacity: 0.3;
     z-index: 0;
