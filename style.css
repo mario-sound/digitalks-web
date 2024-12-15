@@ -172,13 +172,14 @@
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("Poppins-Thin.eot");
-  src: url("Poppins-Thin.eot?#iefix") format("embedded-opentype"),
-    url("Poppins-Thin.woff2") format("woff2"),
-    url("Poppins-Thin.woff") format("woff"),
-    url("Poppins-Thin.ttf") format("truetype"),
-    url("Poppins-Thin.svg#Poppins-Thin") format("svg");
+  font-family: "Poppins-nor";
+  src: url("fonts/fonts/poppins/Poppins-Thin.eot");
+  src: url("fonts/fonts/poppins/Poppins-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/fonts/poppins/Poppins-Thin.woff2") format("woff2"),
+    url("fonts/fonts/poppins/Poppins-Thin.woff") format("woff"),
+    url("fonts/fonts/poppins/Poppins-Thin.ttf") format("truetype"),
+    url("fonts/fonts/poppins/Poppins-Thin.svg#Poppins-Thin") format("svg");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -186,12 +187,14 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("Poppins-LightItalic.eot");
-  src: url("Poppins-LightItalic.eot?#iefix") format("embedded-opentype"),
-    url("Poppins-LightItalic.woff2") format("woff2"),
-    url("Poppins-LightItalic.woff") format("woff"),
-    url("Poppins-LightItalic.ttf") format("truetype"),
-    url("Poppins-LightItalic.svg#Poppins-LightItalic") format("svg");
+  src: url("fonts/fonts/poppins/Poppins-LightItalic.eot");
+  src: url("fonts/fonts/poppins/Poppins-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/fonts/poppins/Poppins-LightItalic.woff2") format("woff2"),
+    url("fonts/fonts/poppins/Poppins-LightItalic.woff") format("woff"),
+    url("fonts/fonts/poppins/Poppins-LightItalic.ttf") format("truetype"),
+    url("fonts/fonts/poppins/Poppins-LightItalic.svg#Poppins-LightItalic")
+      format("svg");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -226,242 +229,15 @@
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("Poppins-Light.eot");
-  src: url("Poppins-Light.eot?#iefix") format("embedded-opentype"),
-    url("Poppins-Light.woff2") format("woff2"),
-    url("Poppins-Light.woff") format("woff"),
-    url("Poppins-Light.ttf") format("truetype"),
-    url("Poppins-Light.svg#Poppins-Light") format("svg");
+  font-family: "Poppins-lig";
+  src: url("fonts/fonts/poppins/Poppins-Light.eot");
+  src: url("fonts/fonts/poppins/Poppins-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/fonts/poppins/Poppins-Light.woff2") format("woff2"),
+    url("fonts/fonts/poppins/Poppins-Light.woff") format("woff"),
+    url("fonts/fonts/poppins/Poppins-Light.ttf") format("truetype"),
+    url("fonts/fonts/poppins/Poppins-Light.svg#Poppins-Light") format("svg");
   font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat-reg";
-  src: url("./fonts/fonts/lato-montserrat/Montserrat-Regular.eot");
-  src: url("./fonts/fonts/lato-montserrat/Montserrat-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Regular.woff2")
-      format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Regular.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Regular.ttf")
-      format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Regular.svg#Montserrat-Regular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat-semibold";
-  src: url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.eot");
-  src: url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.woff2")
-      format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.ttf")
-      format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-SemiBold.svg#Montserrat-SemiBold")
-      format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat-med";
-  src: url("./fonts/fonts/lato-montserrat/Montserrat-Medium.eot");
-  src: url("./fonts/fonts/lato-montserrat/Montserrat-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Medium.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Medium.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Medium.ttf")
-      format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Medium.svg#Montserrat-Medium")
-      format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat-thin";
-  src: url("./fonts/fonts/lato-montserrat/Montserrat-Thin.eot");
-  src: url("./fonts/fonts/lato-montserrat/Montserrat-Thin.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Thin.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Thin.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Thin.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Montserrat-Thin.svg#Montserrat-Thin")
-      format("svg");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "LatoItalic";
-  src: url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-BlackItalic.svg#Lato-BlackItalic")
-      format("svg");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "LatoBlack";
-  src: url("./fonts/fonts/lato-montserrat/Lato-Black.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-Black.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Black.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-Black.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-Black.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Black.svg#Lato-Black") format("svg");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-bold";
-  src: url("./fonts/fonts/lato-montserrat/Lato-Bold.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Bold.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-Bold.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-Bold.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Bold.svg#Lato-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato Hairline Italic";
-  src: url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.woff2")
-      format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.ttf")
-      format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-HairlineItalic.svg#Lato-HairlineItalic")
-      format("svg");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-bolditalic";
-  src: url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-BoldItalic.svg#Lato-BoldItalic")
-      format("svg");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-light";
-  src: url("./fonts/fonts/lato-montserrat/Lato-Light.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Light.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-Light.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-Light.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Light.svg#Lato-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-normitalic";
-  src: url("./fonts/fonts/lato-montserrat/Lato-Italic.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-Italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Italic.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-Italic.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-Italic.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Italic.svg#Lato-Italic")
-      format("svg");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato Hairline";
-  src: url("./fonts/fonts/lato-montserrat/Lato-Hairline.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-Hairline.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Hairline.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-Hairline.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-Hairline.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Hairline.svg#Lato-Hairline")
-      format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-reg";
-  src: url("./fonts/fonts/lato-montserrat/Lato-Regular.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Regular.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-Regular.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-Regular.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-Regular.svg#Lato-Regular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato-italic";
-  src: url("./fonts/fonts/lato-montserrat/Lato-LightItalic.eot");
-  src: url("./fonts/fonts/lato-montserrat/Lato-LightItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/lato-montserrat/Lato-LightItalic.woff2") format("woff2"),
-    url("./fonts/fonts/lato-montserrat/Lato-LightItalic.woff") format("woff"),
-    url("./fonts/fonts/lato-montserrat/Lato-LightItalic.ttf") format("truetype"),
-    url("./fonts/fonts/lato-montserrat/Lato-LightItalic.svg#Lato-LightItalic")
-      format("svg");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "UbuntuBold";
-  src: url("./fonts/fonts/ubuntu/Ubuntu-Bold.eot");
-  src: url("./fonts/fonts/ubuntu/Ubuntu-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/ubuntu/Ubuntu-Bold.woff2") format("woff2"),
-    url("./fonts/fonts/ubuntu/Ubuntu-Bold.woff") format("woff"),
-    url("./fonts/fonts/ubuntu/Ubuntu-Bold.ttf") format("truetype"),
-    url("./fonts/fonts/ubuntu/Ubuntu-Bold.svg#Ubuntu-Bold") format("svg");
-  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -475,32 +251,6 @@
     url("./fonts/fonts/ubuntu/Ubuntu.ttf") format("truetype"),
     url("./fonts/fonts/ubuntu/Ubuntu.svg#Ubuntu") format("svg");
   font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Asimov";
-  src: url("./fonts/fonts/asimov/AsimovNar.woff2") format("woff2"),
-    url("./fonts/fonts/asimov/AsimovNar.woff") format("woff"),
-    url("./fonts/fonts/asimov/AsimovNar.ttf") format("truetype"),
-    url("./fonts/fonts/asimov/AsimovNar.svg#AsimovNar") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ZT Gatha SemBd";
-  src: url("./fonts/fonts/gatha/ZTGatha-SemiBold.eot");
-  src: url("./fonts/fonts/gatha/ZTGatha-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/fonts/gatha/ZTGatha-SemiBold.woff2") format("woff2"),
-    url("./fonts/fonts/gatha/ZTGatha-SemiBold.woff") format("woff"),
-    url("./fonts/fonts/gatha/ZTGatha-SemiBold.ttf") format("truetype"),
-    url("./fonts/fonts/gatha/ZTGatha-SemiBold.svg#ZTGatha-SemiBold")
-      format("svg");
-  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -940,7 +690,7 @@ html {
   }
 
   li {
-    font-size: 1.1rem; /* Mejora la legibilidad de listas */
+    font-size: 2rem; /* Mejora la legibilidad de listas */
   }
 }
 
@@ -971,6 +721,10 @@ html {
     margin: 0 auto;
     max-width: 100%; /* Evita márgenes innecesarios */
   }
+
+  .first-text h1 {
+    font-size: 2.2rem;
+  }
 }
 
 header nav ul li a,
@@ -993,6 +747,11 @@ body {
   padding: 0;
   max-width: 100%;
   background-color: white;
+}
+
+.nomarginnopadding {
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -1140,6 +899,8 @@ section.landing1 {
   }
 }
 .icon-earbuds {
+  text-align: center;
+  padding: 1.2rem 0 0 0;
   color: grey;
 }
 .icon-earbuds:hover {
@@ -1155,14 +916,32 @@ section.landing1 {
 }
 
 .suenabien ul {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 0;
   padding: 1rem 0 1rem 0;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .suenabien ul {
+    gap: 0.5rem;
+  }
+  .suenabien p {
+    font-size: 2rem;
+  }
+
+  .suenabien ul li a {
+    font-size: 2rem;
+  }
 }
 
 .iconsvg.play-figure {
-  max-width: 15rem;
   min-width: 6rem;
-  width: 15rem;
+  width: 26rem;
+}
+.iconsvg.play-figure .cls-1:hover {
+  fill: gold;
 }
 
 @media (max-width: 768px) {
@@ -1246,7 +1025,7 @@ section.landing1 {
 }
 
 main p {
-  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-family: "Poppins-med", Arial, Helvetica, sans-serif;
 }
 
 main section h1 {
@@ -1270,6 +1049,16 @@ section.effectivity {
   text-align: center;
   flex-wrap: wrap;
   padding-bottom: 2rem;
+}
+
+.iconodeprueba {
+  fill: black;
+}
+.iconodeprueba .cls-1 {
+  fill: white;
+}
+.iconodeprueba .cls-2 {
+  fill: grey;
 }
 
 .effectivity figure {
@@ -1327,22 +1116,44 @@ main section.first-text ul li {
   padding: 0;
   border-top: #ffd133 1px solid;
   border-bottom: #ffd133 1px solid;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   margin: auto;
-  color: grey;
   font-size: 1.3rem;
 }
 
-.hook.naturales {
+.hook1 {
   background-color: #ffd133;
-  padding: 30px;
+  display: grid;
+  justify-content: center;
+}
+
+.quote {
+  padding: 30px 0 30px 0;
   border: 0px;
   color: black;
   font-size: 1.7rem;
+  /* padding-right: 18rem; */
 }
-.hook.naturales span {
-  color: white;
+@media (max-width: 768px) {
+  .quote {
+    padding: 30px;
+    border: 0px;
+    color: black;
+    font-size: 1.7rem;
+    padding-right: 1rem;
+  }
+}
+
+.quote p:first-child {
+  font-family: "Poppins-sembold";
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
+}
+.quote p.maspequeno {
+  font-family: "Poppins-med";
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .hook.sitelodijeramos {
@@ -1378,12 +1189,6 @@ main section.first-text ul li {
   }
 }
 
-/* .iconsvg.arrow-figure {
-  position: absolute;
-  left: 60%;
-  transform: translate(15rem, -51%) rotate(350deg);
-  height: auto;
-} */
 .iconsvg.arrow-figure {
   position: absolute;
   left: 60%;
@@ -1392,15 +1197,12 @@ main section.first-text ul li {
 }
 @media (max-width: 768px) {
   .iconsvg.arrow-figure {
-    position: absolute;
-    left: 60%;
-    transform: translate(12rem, -65%) rotate(350deg);
-    height: auto;
+    display: none;
   }
 }
 
 .iconsvg.arrow-figure .cls-1:hover {
-  fill: #ccc;
+  fill: #ffd133;
 }
 
 section#efficiency h2,
@@ -1413,10 +1215,10 @@ section#efficiency details {
   font-size: 2rem;
   text-align: center;
   padding: 3rem 0 2rem 0;
-  font-family: "Lato-light";
+  font-family: "Poppins-med";
 }
 #efficiency {
-  font-family: "Ubuntu";
+  font-family: "Poppins-med";
 }
 
 #efficiency li {
@@ -1498,7 +1300,7 @@ section#efficiency details {
 #human-ia {
   max-width: 80%;
   margin: auto;
-  font-family: "Ubuntu";
+  font-family: "Poppins-nor";
   font-size: 1.4rem;
   border-top: 1px rgb(251, 251, 248) solid;
   padding: 10px;
@@ -1506,7 +1308,7 @@ section#efficiency details {
 
 #human-ia h2,
 #human-iah3 {
-  font-family: "Lato-light";
+  font-family: "Poppins-med";
 }
 
 .proceso-humania {
@@ -1558,7 +1360,7 @@ section#efficiency details {
 /* DEMOS */
 
 #demos {
-  font-family: "Ubuntu";
+  font-family: "Poppins-nor";
   padding: 10px;
   background-color: #000000;
   padding-left: 25px;
@@ -1567,7 +1369,7 @@ section#efficiency details {
 
 #demos h2,
 #demos h3 {
-  font-family: "Lato-light";
+  font-family: "Poppins-med";
   color: white;
 }
 
@@ -1601,7 +1403,28 @@ section#efficiency details {
   text-align: center;
 }
 
+.demos-iframes h3 {
+  border-top: rgb(77, 77, 77, 0.2) 1px solid;
+}
+
+/* GRID AREAS DEMOS */
 .demos-iframes .audiolibros,
+.demos-iframes .audiodescripciones,
+.demos-iframes .demo-rrss,
+.demos-iframes .elearnings {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-areas: ". left2grid right3grid .";
+}
+.demos-iframes .left2grid {
+  grid-area: left2grid;
+}
+.demos-iframes .right3grid {
+  grid-area: right3grid;
+  justify-self: center;
+}
+
+/* .demos-iframes .audiolibros,
 .demos-iframes .audiodescripciones,
 .demos-iframes .demo-rrss,
 .demos-iframes .elearnings {
@@ -1622,7 +1445,7 @@ section#efficiency details {
     justify-content: center;
     padding: 0 10rem 0 5rem;
   }
-}
+} */
 .demos-iframes .audiodescripciones > iframe {
   margin: 0px 10px 10px 0px;
 }
@@ -1662,11 +1485,65 @@ section#efficiency details {
 .audiolibros p > span {
   color: white;
 }
-
-.iconsvg.web-figure .cls-1 {
-  fill: white;
+/* svg AUDIOLIBROS */
+.audiolibros figure.iconsvg.libro-figure .cls-1 {
+  fill: #fff;
+}
+.iconsvg.libro-figure .cls-2 {
+  fill: #4d4d4d;
+}
+.iconsvg.libro-figure .cls-3 {
+  fill: #ffd133;
+}
+.iconsvg.libro-figure .cls-3:hover {
+  fill: grey;
+}
+/* svg WEB y RRSS */
+.demo-rrss figure.iconsvg.web-figure .cls-1 {
+  fill: #fff;
+}
+.iconsvg.web-figure .cls-2 {
+  fill: #4d4d4d;
+}
+.iconsvg.web-figure .cls-3 {
+  fill: #ffd133;
 }
 
+article.demo-rrss {
+  display: flex;
+}
+/* svg AUDIODESCRIPCIONES */
+.audiodescripciones figure.iconsvg.audio-description .cls-1 {
+  stroke: #000;
+  fill: #ffd133;
+  stroke-miterlimit: 10;
+}
+.audiodescripciones figure.iconsvg.audio-description .cls-2 {
+  fill: #ffd133;
+  stroke-width: 2.5px;
+  stroke-miterlimit: 10;
+  stroke: #4d4d4d;
+}
+.audiodescripciones figure.iconsvg.audio-description .cls-3 {
+  fill: #fff;
+  stroke-miterlimit: 10;
+  stroke: #4d4d4d;
+}
+/* svg E-LEARNINGS */
+.elearnings figure.iconsvg.mundo-figure2 .cls-1 {
+  fill: #4d4d4d;
+}
+.elearnings figure.iconsvg.mundo-figure2 .cls-1:hover {
+  fill: #4d4d4d;
+}
+.elearnings figure.iconsvg.mundo-figure2 .cls-2 {
+  fill: white;
+}
+.elearnings figure.iconsvg.mundo-figure2 .cls-2:hover {
+  fill: #ffd133;
+}
+
+/* ---------- */
 article.demo-rrss {
   display: flex;
 }
@@ -1712,7 +1589,7 @@ article.demo-rrss {
 /* CONTACTO */
 
 #contact-form {
-  font-family: "Ubuntu";
+  font-family: "Poppins-med";
   padding: 10px;
   margin: auto;
   justify-content: center;
@@ -1730,20 +1607,18 @@ article.demo-rrss {
   justify-self: center;
   text-align: center;
 }
-
 #contact-form address:hover {
   color: grey;
   cursor: alias;
 }
-
 .iconsvg.sobre-figure {
   justify-self: center;
   max-width: 15%;
 }
 
 #contact-form h2 {
-  font-family: "Lato-light";
-  display: inline-block;
+  padding-top: 10px;
+  margin: 0;
 }
 
 /* FOOTER */
@@ -1778,6 +1653,14 @@ footer p span:nth-of-type(2) {
 footer p span:nth-of-type(3) {
   color: #ccc;
   font-size: clamp(1.2rem, 2.5vw, 2rem); /* Tamaño fluido */
+}
+
+footer .rrss i {
+  color: #ffd133;
+  font-size: 1.5rem;
+}
+footer .rrss i:hover {
+  color: rgb(14, 79, 181, 0.5);
 }
 
 footer nav {
