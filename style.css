@@ -920,7 +920,7 @@ section.landing1 {
   flex-direction: column;
   margin: 0 0 0 0;
   padding: 1rem 0 1rem 0;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -1090,7 +1090,7 @@ figure.iconsvg .cls-1:hover {
 
 main section.first-text ul li {
   list-style: none;
-  font-family: "Montserrat-reg";
+  font-family: "Poppins-med";
   font-size: clamp(0.9rem, 2vw, 1.1rem); /* Tamaño fluido */
 }
 
