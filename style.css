@@ -804,7 +804,7 @@ header p span:nth-of-type(2) {
 }
 header p span:nth-of-type(3) {
   color: #ccc;
-  font-size: clamp(1.2rem, 2.5vw, 2rem); /* Tamaño fluido */
+  font-size: clamp(1.2rem, 1.2vw, 1.2rem); /* Tamaño fluido */
 }
 
 /* NAVIGATION */
@@ -1653,7 +1653,7 @@ footer section {
 }
 footer p {
   font-family: "Poppins-sembold";
-  font-size: clamp(2rem, 3vw, 3rem); /* Tamaño fluido */
+  font-size: clamp(2rem, 2vw, 2rem); /* Tamaño fluido */
   letter-spacing: -0.08rem;
   margin: 0;
 }
@@ -1666,7 +1666,7 @@ footer p span:nth-of-type(2) {
 }
 footer p span:nth-of-type(3) {
   color: #ccc;
-  font-size: clamp(1.2rem, 2.5vw, 2rem); /* Tamaño fluido */
+  font-size: clamp(1.2rem, 1.2vw, 1.2rem); /* Tamaño fluido */
 }
 
 footer .rrss i {
