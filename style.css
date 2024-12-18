@@ -1114,8 +1114,8 @@ main section.first-text ul li {
 .hook {
   margin: 0;
   padding: 0;
-  border-top: #ffd133 1px solid;
-  border-bottom: #ffd133 1px solid;
+  /* border-top: #ffd133 1px solid;
+  border-bottom: #ffd133 1px solid; */
   margin: auto;
   font-size: 1.3rem;
 }
@@ -1210,11 +1210,21 @@ section#efficiency details {
   margin: auto;
 }
 
+#efficiency .quote.rapidos {
+  background-color: #ffd133;
+  display: grid;
+  justify-content: center;
+}
+
+.quote.rapidos p {
+  font-size: 2.5rem;
+}
+
 /* DETAILS */
 #efficiency h2 {
   font-size: 2rem;
   text-align: center;
-  padding: 3rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
   font-family: "Poppins-med";
 }
 #efficiency {
@@ -1224,7 +1234,11 @@ section#efficiency details {
 #efficiency li {
   list-style-type: none;
 }
-
+#efficiency .acelera {
+  background-color: #000;
+  width: 100%;
+  color: white;
+}
 .comparativa {
   display: flex;
   justify-content: center;
