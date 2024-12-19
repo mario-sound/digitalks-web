@@ -1215,7 +1215,9 @@ section#efficiency details {
   display: grid;
   justify-content: center;
 }
-
+#efficiency .quote p.maspequeno {
+  font-size: 1.5rem;
+}
 .quote.rapidos p {
   font-size: 2.5rem;
 }
@@ -1238,6 +1240,15 @@ section#efficiency details {
   background-color: rgb(38 38 38);
   width: 100%;
   color: white;
+}
+.aclarativo {
+  background-color: rgb(251, 251, 248);
+  color: #ccc;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-style: italic;
 }
 .comparativa {
   display: flex;
