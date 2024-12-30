@@ -667,6 +667,7 @@
 /* RESPONSIVE MOVIL */
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
@@ -1383,7 +1384,6 @@ section#efficiency details {
 }
 
 /* DEMOS */
-
 #demos {
   font-family: "Poppins-nor";
   padding: 10px;
@@ -1391,14 +1391,12 @@ section#efficiency details {
   padding-left: 25px;
   padding-bottom: 5rem;
 }
-
 #demos h2,
 #demos h3 {
   font-family: "Poppins-med";
   color: white;
   font-size: 2rem;
 }
-
 .demos-iframes {
   display: flex;
   flex-direction: column;
