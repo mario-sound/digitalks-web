@@ -1,0 +1,116 @@
+@import "../abstracts/_variables";
+
+/* HUMAN IA */
+#human-ia {
+  margin: auto;
+  font-family: "Poppins-nor";
+  font-size: 1.4rem;
+  border-top: 1px rgb(251, 251, 248) solid;
+  h2,
+  h3 {
+    font-family: "Poppins-med";
+    padding: 50px 15% 20px;
+  }
+  p {
+    justify-self: center;
+    padding: 20px 15% 50px;
+  }
+}
+
+.proceso-humania {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px 15%;
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.nonoscreerias-frase {
+  padding-right: 15%;
+  text-align: right;
+  margin: 0;
+  margin: 3% 0;
+  .hook.sitelodijeramos {
+    display: block;
+    font-size: 2.5rem;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .quote.sitelodijeramos {
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0;
+    color: rgb(38, 38, 38);
+  }
+}
+.proceso-humania figure {
+  display: flex;
+}
+
+.iconsvg {
+  &.texto-figure svg,
+  &.bocavox-figure svg,
+  &.lapiz-figure svg,
+  &.brain-figure svg {
+    height: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  #human-ia h2 {
+    font-size: 50px;
+    padding: 0;
+  }
+  #human-ia p {
+    font-size: 32px;
+    padding: 10%;
+  }
+  #human-ia .proceso-humania {
+    gap: 15%;
+    svg {
+      height: 100px;
+    }
+    p {
+      padding: 0;
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .iconsvg {
+    &.texto-figure svg,
+    &.bocavox-figure svg,
+    &.lapiz-figure svg,
+    &.brain-figure svg {
+      height: 65px;
+    }
+  }
+}
+
+.proceso-humania figure {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .proceso-humania figure p {
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hook.sitelodijeramos ~ .quote {
+    right: 0%;
+    padding-left: 1rem;
+  }
+}

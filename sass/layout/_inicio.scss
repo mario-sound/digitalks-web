@@ -1,0 +1,268 @@
+/* MAIN */
+
+body section.landing {
+  padding: 0 0 0 15%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5%;
+}
+
+@media (max-width: 450px) {
+  .inicio .first-text h1 {
+    font-size: 45px;
+    padding: 3%;
+  }
+  .suenabien {
+    i {
+      display: none;
+    }
+    p {
+      font-size: 50px;
+      text-align: left;
+    }
+    ul li {
+      text-align: left;
+    }
+    body a#demos figure.iconsvg.play-figure {
+      display: none;
+    }
+  }
+  body section.landing {
+    padding: 0;
+  }
+}
+main .inicio {
+  text-align: center;
+  max-width: 100%;
+}
+
+.hook1 {
+  background-color: var(--yellowdigitalks, #ffd133);
+  padding-left: 15%;
+}
+
+.first-text,
+.inicio {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .landing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.suenabien {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0.1rem 0 5rem 0;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .suenabien {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 10px;
+    padding: 0.1rem 1rem 0 1rem;
+    font-size: 3rem;
+  }
+}
+
+.icon-earbuds {
+  text-align: center;
+  padding: 1.2rem 0 0 0;
+  color: grey;
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.suenabien {
+  > p {
+    padding: 0;
+    margin: 0;
+
+    &:first-child {
+      padding-top: 3rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    padding: 1rem 0 1rem 0;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .suenabien {
+    ul {
+      gap: 0.5rem;
+    }
+
+    p,
+    ul li a {
+      font-size: 2rem;
+    }
+  }
+}
+
+.iconsvg.play-figure {
+  min-width: 6rem;
+  width: 26rem;
+
+  .cls-1:hover {
+    fill: gold;
+  }
+}
+
+@media (max-width: 450px) {
+  .iconsvg.play-figure {
+    display: none;
+  }
+}
+
+.inicio a:hover {
+  color: var(--yellowdigitalks, #ffd133);
+}
+
+.first-text {
+  max-width: 100%;
+}
+
+.inicio {
+  padding: 0;
+  margin: 0;
+}
+
+.home-pic {
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.digitalks-logo {
+  margin: 0;
+  padding: 0;
+
+  > p span {
+    &:first-child {
+      font-size: clamp(2rem, 3vw, 3rem);
+
+      /* Tamaño fluido */
+      letter-spacing: -0.08rem;
+      margin: 0;
+      font-family: "Poppins-sembold";
+      font-weight: 600;
+      color: var(--yellowdigitalks, #ffd133);
+    }
+
+    &:nth-of-type(2) {
+      font-size: clamp(2rem, 3vw, 3rem);
+
+      /* Tamaño fluido */
+      letter-spacing: -0.08rem;
+      margin: 0;
+      font-family: "Poppins-sembold";
+      color: black;
+    }
+
+    &:nth-of-type(3) {
+      font-size: clamp(2rem, 3vw, 3rem);
+
+      /* Tamaño fluido */
+      letter-spacing: -0.08rem;
+      margin: 0;
+      font-family: "Poppins-sembold";
+      color: #ccc;
+      font-size: clamp(1.2rem, 2.5vw, 2rem);
+
+      /* Tamaño fluido */
+    }
+  }
+}
+
+.fgr-logo-digitalks-ai,
+.logo-digitalks-ai {
+  margin: 0;
+  padding: 0;
+}
+
+.fgr-logo-digitalks-ai {
+  justify-self: center;
+  height: 100px;
+
+  /* Alto del área visible */
+  overflow: hidden;
+
+  /* Ocultar el contenido fuera de este marco */
+  display: flex;
+}
+
+.logo-digitalks-ai {
+  justify-self: center;
+  width: 350px;
+
+  /* Ancho original de la imagen */
+  height: auto;
+
+  /* Mantener proporción original */
+  object-fit: cover;
+
+  /* Asegurar que la imagen llene el contenedor sin distorsionarse */
+  object-position: center;
+
+  /* Centrar la parte visible */
+}
+
+main {
+  p {
+    font-family: "Poppins-med", Arial, Helvetica, sans-serif;
+  }
+
+  section h1 {
+    font-family: "Poppins-med";
+    font-size: clamp(1.5rem, 3.5vw, 4rem);
+
+    /* Tamaño fluido */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 15px;
+  }
+}
+
+section.effectivity {
+  display: flex;
+  background-image: linear-gradient(white, rgb(251, 251, 248));
+  justify-content: center;
+  gap: 15%;
+  align-items: baseline;
+  font-weight: bold;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.effectivity figure {
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  width: 100px;
+  justify-content: baseline;
+  align-items: baseline;
+}
