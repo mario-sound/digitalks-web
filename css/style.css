@@ -682,6 +682,7 @@ main section.first-text ul li {
 @media (max-width: 450px) {
   header nav {
     display: none;
+    max-width: 100%;
   }
   body header .header-logo {
     display: flex;
@@ -813,6 +814,9 @@ body section.landing {
 }
 
 @media (max-width: 450px) {
+  body {
+    max-width: 30px;
+  }
   .inicio .first-text h1 {
     font-size: 45px;
     padding: 3%;
@@ -916,6 +920,7 @@ main .inicio {
 .iconsvg.play-figure {
   min-width: 6rem;
   width: 26rem;
+  max-width: 26rem;
 }
 .iconsvg.play-figure .cls-1:hover {
   fill: gold;
@@ -994,7 +999,7 @@ main .inicio {
 
 .logo-digitalks-ai {
   justify-self: center;
-  width: 350px;
+  max-width: 350px;
   /* Ancho original de la imagen */
   height: auto;
   /* Mantener proporción original */
@@ -1026,6 +1031,14 @@ section.effectivity {
   text-align: center;
   flex-wrap: wrap;
   padding-bottom: 2rem;
+  border-radius: 100px;
+  transition: box-shadow 0.3s ease, margin 0.3s ease;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+section.effectivity:hover {
+  margin: 0 3% 15px 3%;
+  color: rgba(29, 29, 29, 0.7);
 }
 
 .effectivity figure {
@@ -1238,6 +1251,7 @@ section#efficiency details {
   border-radius: 100px;
   transition: box-shadow 0.3s ease, margin 0.3s ease;
   margin-bottom: 15px;
+  max-width: 100%;
 }
 .effectivity:hover {
   margin: 0 3% 15px 3%;
@@ -1248,6 +1262,7 @@ section#efficiency details {
 /* HUMAN IA */
 #human-ia {
   margin: auto;
+  max-width: fit-content;
   font-family: "Poppins-nor";
   font-size: 1.4rem;
   border-top: 1px rgb(251, 251, 248) solid;
@@ -1260,6 +1275,38 @@ section#efficiency details {
 #human-ia p {
   justify-self: center;
   padding: 20px 15% 50px;
+}
+#human-ia .pasos-movil {
+  font-family: "Poppins-med";
+  display: none;
+  text-align: start;
+  padding: 0;
+}
+#human-ia .pasos-movil p {
+  border-top: 1px solid #ffd113;
+  margin: 0;
+  padding: 15% 0 15px 0;
+}
+#human-ia .pasos-movil ol {
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 25%;
+}
+#human-ia .pasos-movil li {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: rgb(29, 29, 29);
+}
+#human-ia .pasos-movil ::marker {
+  font-size: 20px;
+  color: #ffd113;
+}
+#human-ia .pasos-movil span {
+  display: block;
+  padding: 5%;
+  font-size: 16px;
+  color: rgb(29, 29, 29);
 }
 
 .proceso-humania {
@@ -1303,6 +1350,17 @@ section#efficiency details {
 }
 
 @media (max-width: 450px) {
+  .proceso-humania {
+    max-width: 100%;
+    display: none;
+  }
+  .nonoscreerias-frase {
+    display: none;
+  }
+  #human-ia .pasos-movil {
+    display: inline-block;
+    padding: 0 15%;
+  }
   #human-ia h2 {
     font-size: 50px;
     padding: 0;
@@ -1320,6 +1378,9 @@ section#efficiency details {
   #human-ia .proceso-humania p {
     padding: 0;
     font-size: 24px;
+  }
+  #effectivity {
+    max-width: fit-content;
   }
 }
 @media (max-width: 768px) {
@@ -1598,6 +1659,7 @@ article.demo-rrss {
   padding: 10px;
   margin: auto;
   justify-content: center;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -1618,6 +1680,16 @@ article.demo-rrss {
   box-shadow: 1px 1px 20px 0px rgba(29, 29, 29, 0.5);
 }
 
+@media (max-width: 450px) {
+  #contact-form iframe {
+    max-width: 100%;
+    border: 0px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 0px rgba(29, 29, 29, 0.5);
+    height: 950px;
+  }
+}
 #contact-form > section:nth-of-type(2) {
   justify-self: center;
   text-align: center;

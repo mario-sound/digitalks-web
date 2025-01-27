@@ -9,6 +9,9 @@ body section.landing {
 }
 
 @media (max-width: 450px) {
+  body {
+    max-width: 30px;
+  }
   .inicio .first-text h1 {
     font-size: 45px;
     padding: 3%;
@@ -125,6 +128,7 @@ main .inicio {
 .iconsvg.play-figure {
   min-width: 6rem;
   width: 26rem;
+  max-width: 26rem;
 
   .cls-1:hover {
     fill: gold;
@@ -216,7 +220,7 @@ main .inicio {
 
 .logo-digitalks-ai {
   justify-self: center;
-  width: 350px;
+  max-width: 350px;
 
   /* Ancho original de la imagen */
   height: auto;
@@ -256,6 +260,17 @@ section.effectivity {
   text-align: center;
   flex-wrap: wrap;
   padding-bottom: 2rem;
+  border-radius: 100px;
+  transition: box-shadow 0.3s ease, margin 0.3s ease;
+  margin-bottom: 15px;
+  max-width: 100%;
+  &:hover {
+    margin: 0 3% 15px 3%;
+    color: rgb(29 29 29 / 70%);
+  }
+}
+
+.effectivity {
 }
 
 .effectivity figure {
