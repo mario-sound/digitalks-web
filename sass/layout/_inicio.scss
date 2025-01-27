@@ -8,13 +8,28 @@ body section.landing {
   gap: 5%;
 }
 
+main .inicio {
+  text-align: center;
+  max-width: 100%;
+}
+
+.hook1 {
+  background-color: var(--yellowdigitalks, #ffd133);
+  padding-left: 15%;
+}
+
+.first-text,
+.inicio {
+  margin: 0;
+  padding: 0;
+}
 @media (max-width: 450px) {
   body {
     max-width: 30px;
   }
   .inicio .first-text h1 {
-    font-size: 45px;
-    padding: 3%;
+    font-size: 40px;
+    padding: 0 30px;
   }
   .suenabien {
     i {
@@ -35,22 +50,6 @@ body section.landing {
     padding: 0;
   }
 }
-main .inicio {
-  text-align: center;
-  max-width: 100%;
-}
-
-.hook1 {
-  background-color: var(--yellowdigitalks, #ffd133);
-  padding-left: 15%;
-}
-
-.first-text,
-.inicio {
-  margin: 0;
-  padding: 0;
-}
-
 @media (max-width: 768px) {
   .landing {
     display: flex;
@@ -132,12 +131,6 @@ main .inicio {
 
   .cls-1:hover {
     fill: gold;
-  }
-}
-
-@media (max-width: 450px) {
-  .iconsvg.play-figure {
-    display: none;
   }
 }
 
@@ -270,9 +263,6 @@ section.effectivity {
   }
 }
 
-.effectivity {
-}
-
 .effectivity figure {
   margin: 0;
   padding: 0;
@@ -280,4 +270,25 @@ section.effectivity {
   width: 100px;
   justify-content: baseline;
   align-items: baseline;
+}
+
+@media (max-width: 450px) {
+  section.effectivity {
+    padding: 30px;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+  .iconsvg.play-figure {
+    display: none;
+  }
+  .hook1 {
+    padding-left: 0;
+  }
+  .effectivity {
+    max-width: 100%;
+    figure {
+      min-width: 50px;
+      max-width: 80px;
+    }
+  }
 }

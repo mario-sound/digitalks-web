@@ -125,6 +125,14 @@ section#efficiency {
   font-style: italic;
 }
 
+@media (max-width: 450px) {
+  .aclarativo {
+    justify-content: start;
+    text-align: start;
+    padding: 0 30px;
+  }
+}
+
 .comparativa {
   display: flex;
   justify-content: center;
@@ -136,15 +144,22 @@ section#efficiency {
   background-color: rgb(251, 251, 248);
 }
 
-#efficiency .quote.rapidos {
+.quote.rapidos {
   background-color: var(--yellowdigitalks, #ffd133);
   display: grid;
   padding-left: 15%;
 }
 
 @media (max-width: 450px) {
+  .comparativa {
+    text-align: start;
+    p {
+      padding: 0 30px;
+    }
+  }
   #efficiency .acelera {
-    padding: 20px;
+    padding: 30px;
+    text-align: start;
   }
   #efficiency .comparativa {
     display: flex;
@@ -154,6 +169,23 @@ section#efficiency {
     padding-top: 1%;
     padding-bottom: 2%;
     background-color: rgb(251, 251, 248);
+    ul {
+      padding: 0 30px;
+      li {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+  #efficiency .quote.rapidos {
+    padding: 30px;
+  }
+  .hook.rapidos {
+    padding: 0;
+  }
+  .suenabien {
+    padding: 0 30px;
   }
 }
 
@@ -201,6 +233,18 @@ section#efficiency {
   }
 }
 
+@media (max-width: 450px) {
+  .comparativatradicional {
+    .iconsvg.xfigure {
+      transform: translate(5vh, -25vh) rotate(100deg);
+      .cls-1 {
+        fill: red;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .iconsvg.xfigure {
     position: absolute;
@@ -220,17 +264,5 @@ section#efficiency {
 
   .cls-2 {
     fill: grey;
-  }
-}
-
-.effectivity {
-  border-radius: 100px;
-  transition: box-shadow 0.3s ease, margin 0.3s ease;
-  margin-bottom: 15px;
-  max-width: 100%;
-
-  &:hover {
-    margin: 0 3% 15px 3%;
-    color: rgb(29 29 29 / 70%);
   }
 }

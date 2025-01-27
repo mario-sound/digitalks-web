@@ -106,15 +106,17 @@
   #human-ia {
     .pasos-movil {
       display: inline-block;
-      padding: 0 15%;
+      padding: 0 30px;
     }
     h2 {
       font-size: 50px;
-      padding: 0;
+      text-align: start;
+      padding: 0 30px;
     }
     p {
       font-size: 32px;
-      padding: 10%;
+      padding: 0 30px;
+      text-align: start;
     }
     .proceso-humania {
       gap: 15%;
@@ -126,9 +128,6 @@
         font-size: 24px;
       }
     }
-  }
-  #effectivity {
-    max-width: fit-content;
   }
 }
 
