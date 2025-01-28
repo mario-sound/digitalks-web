@@ -1,21 +1,30 @@
 /* MAIN */
 
+main {
+  max-width: 100vw;
+}
+
 body section.landing {
   padding: 0 0 0 15%;
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 5%;
+  gap: 25%;
 }
 
 main .inicio {
   text-align: center;
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 .hook1 {
   background-color: var(--yellowdigitalks, #ffd133);
   padding-left: 15%;
+  padding: 3vh 15%;
+}
+
+.first-text h1 {
+  padding: 5vh 0;
 }
 
 .first-text,
@@ -32,6 +41,8 @@ main .inicio {
     padding: 0 30px;
   }
   .suenabien {
+    padding: 0;
+
     i {
       display: none;
     }
@@ -48,6 +59,7 @@ main .inicio {
   }
   body section.landing {
     padding: 0;
+    flex-direction: row;
   }
 }
 @media (max-width: 768px) {
@@ -66,7 +78,7 @@ main .inicio {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  padding: 0.1rem 0 5rem 0;
+  // padding: 0.1rem 0 5rem 0;
   font-size: 2rem;
 }
 
@@ -106,8 +118,11 @@ main .inicio {
     display: flex;
     flex-direction: column;
     margin: 0 0 0 0;
-    padding: 1rem 0 1rem 0;
+    padding: 100px 0 100px 0;
     gap: 10px;
+    li a {
+      font-size: 25px;
+    }
   }
 }
 
@@ -197,7 +212,7 @@ main .inicio {
 .fgr-logo-digitalks-ai,
 .logo-digitalks-ai {
   margin: 0;
-  padding: 0;
+  padding: 0 0;
 }
 
 .fgr-logo-digitalks-ai {
@@ -234,7 +249,7 @@ main {
 
   section h1 {
     font-family: "Poppins-med";
-    font-size: clamp(1.5rem, 3.5vw, 4rem);
+    font-size: 60px;
 
     /* Tamaño fluido */
     margin-top: 1rem;
@@ -252,15 +267,9 @@ section.effectivity {
   font-weight: bold;
   text-align: center;
   flex-wrap: wrap;
-  padding-bottom: 2rem;
-  border-radius: 100px;
+  padding: 8vh 0;
   transition: box-shadow 0.3s ease, margin 0.3s ease;
-  margin-bottom: 15px;
   max-width: 100%;
-  &:hover {
-    margin: 0 3% 15px 3%;
-    color: rgb(29 29 29 / 70%);
-  }
 }
 
 .effectivity figure {

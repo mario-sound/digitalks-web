@@ -610,10 +610,6 @@ footer {
   max-width: 100%; /* Evita márgenes innecesarios */
 }
 
-.first-text h1 {
-  font-size: 2.2rem;
-}
-
 header nav ul li a,
 footer nav a {
   font-size: 1.2rem; /* Incrementa el tamaño del texto */
@@ -805,22 +801,31 @@ footer nav a:hover {
 }
 
 /* MAIN */
+main {
+  max-width: 100vw;
+}
+
 body section.landing {
   padding: 0 0 0 15%;
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 5%;
+  gap: 25%;
 }
 
 main .inicio {
   text-align: center;
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 .hook1 {
   background-color: var(--yellowdigitalks, #ffd133);
   padding-left: 15%;
+  padding: 3vh 15%;
+}
+
+.first-text h1 {
+  padding: 5vh 0;
 }
 
 .first-text,
@@ -837,6 +842,9 @@ main .inicio {
     font-size: 40px;
     padding: 0 30px;
   }
+  .suenabien {
+    padding: 0;
+  }
   .suenabien i {
     display: none;
   }
@@ -852,6 +860,7 @@ main .inicio {
   }
   body section.landing {
     padding: 0;
+    flex-direction: row;
   }
 }
 @media (max-width: 768px) {
@@ -869,7 +878,6 @@ main .inicio {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  padding: 0.1rem 0 5rem 0;
   font-size: 2rem;
 }
 
@@ -904,8 +912,11 @@ main .inicio {
   display: flex;
   flex-direction: column;
   margin: 0 0 0 0;
-  padding: 1rem 0 1rem 0;
+  padding: 100px 0 100px 0;
   gap: 10px;
+}
+.suenabien ul li a {
+  font-size: 25px;
 }
 
 @media (max-width: 768px) {
@@ -980,7 +991,7 @@ main .inicio {
 .fgr-logo-digitalks-ai,
 .logo-digitalks-ai {
   margin: 0;
-  padding: 0;
+  padding: 0 0;
 }
 
 .fgr-logo-digitalks-ai {
@@ -1009,7 +1020,7 @@ main p {
 }
 main section h1 {
   font-family: "Poppins-med";
-  font-size: clamp(1.5rem, 3.5vw, 4rem);
+  font-size: 60px;
   /* Tamaño fluido */
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1025,15 +1036,9 @@ section.effectivity {
   font-weight: bold;
   text-align: center;
   flex-wrap: wrap;
-  padding-bottom: 2rem;
-  border-radius: 100px;
+  padding: 8vh 0;
   transition: box-shadow 0.3s ease, margin 0.3s ease;
-  margin-bottom: 15px;
   max-width: 100%;
-}
-section.effectivity:hover {
-  margin: 0 3% 15px 3%;
-  color: rgba(29, 29, 29, 0.7);
 }
 
 .effectivity figure {
@@ -1118,7 +1123,7 @@ section.effectivity:hover {
 .iconsvg.arrow-figure {
   position: absolute;
   left: 60%;
-  transform: translate(15rem, -51%) rotate(350deg);
+  transform: translate(-40rem, -20%) rotate(350deg);
   max-width: 100%;
 }
 .iconsvg.arrow-figure .cls-1:hover {
@@ -1136,12 +1141,15 @@ section#efficiency details {
 }
 
 #efficiency {
+  background-color: var(--yellowdigitalks, #ffd133);
   font-family: "Poppins-med";
 }
+#efficiency .quotemorepadding {
+  padding: 30px 0 30px 0;
+}
 #efficiency .quote.rapidos {
-  background-color: var(--yellowdigitalks, #ffd133);
   display: grid;
-  padding-left: 15%;
+  padding: 3vh 15%;
 }
 #efficiency .quote p.maspequeno {
   font-size: 1.5rem;
@@ -1149,16 +1157,19 @@ section#efficiency details {
 #efficiency h2 {
   font-size: 2rem;
   text-align: center;
-  padding: 2rem 0 2rem 0;
   font-family: "Poppins-med";
 }
 #efficiency li {
   list-style-type: none;
 }
 #efficiency .acelera {
+  padding: 4vh 0;
   background-color: rgb(38, 38, 38);
   width: 100%;
   color: white;
+}
+#efficiency .acelera .padding30px {
+  padding: 30px 0 30px 30px;
 }
 
 /* DETAILS */
@@ -1204,7 +1215,6 @@ section#efficiency details {
     padding: 0 30px;
   }
   #efficiency .acelera {
-    padding: 30px;
     text-align: start;
   }
   #efficiency .comparativa {
@@ -1364,11 +1374,15 @@ section#efficiency details {
   padding: 0;
 }
 
+.nonoscreerias {
+  background-color: rgb(251, 251, 248);
+  padding: 6vh 0;
+}
+
 .nonoscreerias-frase {
   padding-right: 15%;
   text-align: right;
   margin: 0;
-  margin: 3% 0;
 }
 .nonoscreerias-frase .hook.sitelodijeramos {
   display: block;
@@ -1460,10 +1474,14 @@ section#efficiency details {
   padding-bottom: 5rem;
 }
 #demos h2 {
-  padding-left: 15%;
+  text-align: start;
+  padding: 4vh 0 4vh 15%;
   font-family: "Poppins-med";
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+#demos h2 span {
+  font-size: 3rem;
 }
 #demos h3 {
   font-family: "Poppins-med";
@@ -1521,6 +1539,10 @@ section#efficiency details {
 }
 .demos-iframes h3 {
   border-top: rgba(77, 77, 77, 0.2) 1px solid;
+  padding: 50px 0;
+}
+.demos-iframes p {
+  text-align: start;
 }
 
 /* GRID AREAS DEMOS */
@@ -1529,7 +1551,7 @@ section#efficiency details {
 .demos-iframes .demo-rrss,
 .demos-iframes .elearnings {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-columns: 4fr 4fr 4fr 4fr;
   grid-template-areas: ". left2grid right3grid .";
 }
 .demos-iframes .left2grid {
@@ -1576,7 +1598,7 @@ section#efficiency details {
 .demos-iframes .titulonudista {
   display: grid;
   grid-template-areas: ". garea . .";
-  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-columns: 4fr 4fr 4fr 4fr;
   justify-items: left;
   align-items: center;
 }
@@ -1657,6 +1679,10 @@ article.demo-rrss {
 }
 
 /* ---------- */
+article {
+  padding-bottom: 100px;
+}
+
 article.demo-rrss {
   display: flex;
 }
