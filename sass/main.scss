@@ -1,8 +1,9 @@
-@use "./fonts/_fonts";
-@use "./fonts/_icons";
-@use "./responsive/_phone";
-@use "./abstracts/_variables";
-@use "./abstracts/_svgicons";
+@use "./fonts/fonts";
+@use "./fonts/icons";
+@use "./responsive/phone";
+@use "./abstracts/variables";
+@use "./abstracts/svgicons";
+@use "./abstracts/mixins";
 @use "./layout/_header";
 @use "./layout/_footer";
 @use "./layout/_inicio";

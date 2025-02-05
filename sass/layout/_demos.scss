@@ -322,3 +322,10 @@ article.demo-rrss {
     align-self: center;
   }
 }
+@media (max-width: 450px) {
+  #demos .demos-iframes {
+    iframe {
+      max-width: 300px;
+    }
+  }
+}

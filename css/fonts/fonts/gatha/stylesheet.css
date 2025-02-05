@@ -1,13 +1,12 @@
 @font-face {
-    font-family: 'ZT Gatha SemBd';
-    src: url('ZTGatha-SemiBold.eot');
-    src: url('ZTGatha-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('ZTGatha-SemiBold.woff2') format('woff2'),
-        url('ZTGatha-SemiBold.woff') format('woff'),
-        url('ZTGatha-SemiBold.ttf') format('truetype'),
-        url('ZTGatha-SemiBold.svg#ZTGatha-SemiBold') format('svg');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "ZT Gatha SemBd";
+  src: url("ZTGatha-SemiBold.eot");
+  src: url("ZTGatha-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("ZTGatha-SemiBold.woff2") format("woff2"),
+    url("ZTGatha-SemiBold.woff") format("woff"),
+    url("ZTGatha-SemiBold.ttf") format("truetype"),
+    url("ZTGatha-SemiBold.svg#ZTGatha-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
-

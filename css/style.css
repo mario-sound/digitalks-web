@@ -565,87 +565,6 @@
   content: "\eae5";
 }
 
-/* RESPONSIVE MOVIL */
-@media (max-width: 768px) {
-  html {
-    font-size: 24px;
-    box-sizing: border-box;
-  }
-  h1,
-  h2,
-  h3 {
-    font-size: 1.8rem; /* Ajusta el tamaño de encabezados */
-    line-height: 1.4;
-  }
-  p {
-    font-size: 1.2rem; /* Aumenta el tamaño del texto normal */
-    line-height: 1.6;
-  }
-  li {
-    font-size: 2rem; /* Mejora la legibilidad de listas */
-  }
-}
-header section,
-footer section {
-  padding: 10px; /* Espacio más amplio en dispositivos pequeños */
-}
-
-main .inicio {
-  text-align: left; /* Mejor alineación del contenido */
-}
-
-.first-text ul li {
-  margin-bottom: 10px; /* Mejora la separación de listas */
-}
-
-body {
-  padding: 0 0px;
-  text-align: center;
-}
-
-header,
-main,
-footer {
-  margin: 0 auto;
-  max-width: 100%; /* Evita márgenes innecesarios */
-}
-
-header nav ul li a,
-footer nav a {
-  font-size: 1.2rem; /* Incrementa el tamaño del texto */
-}
-
-header nav ul li a:hover {
-  color: var(--yellowdigitalks, #ffd133); /* Mejora el contraste en hover */
-}
-
-/* Pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-  header section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  header nav ul {
-    flex-direction: column; /* Apila los elementos del menú */
-    gap: 10px;
-    align-items: center;
-    padding-left: 0;
-  }
-  footer section {
-    flex-direction: column; /* Apilar elementos del footer */
-    text-align: center;
-  }
-}
-.demos-iframes article section {
-  display: flex;
-  flex-direction: column;
-}
-
-.demos-iframes article iframe {
-  justify-content: center;
-}
-
 /* VARIABLES */
 /* ICONOS GENERAL */
 /* borde iconos */
@@ -1725,6 +1644,11 @@ article.demo-rrss {
     align-self: center;
   }
 }
+@media (max-width: 450px) {
+  #demos .demos-iframes iframe {
+    max-width: 300px;
+  }
+}
 /* CONTACTO */
 #contact-form {
   font-family: "Poppins-med";
@@ -1754,7 +1678,7 @@ article.demo-rrss {
 
 @media (max-width: 450px) {
   #contact-form iframe {
-    max-width: 100%;
+    max-width: 90vw;
     border: 0px solid black;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
