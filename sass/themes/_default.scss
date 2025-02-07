@@ -1,0 +1,26 @@
+// * {
+//   @include abstracts.breakpoint(phone) {
+//   }
+//   @include abstracts.breakpoint(tablet) {
+//   }
+//   @include abstracts.breakpoint(tablet-horizontal) {
+//   }
+//   @include abstracts.breakpoint(desktop) {
+//   }
+//   @include abstracts.breakpoint(desktop-xl) {
+//   }
+// }
+
+@use "../abstracts/abstracts" as abstracts;
+
+a.header-logo {
+  figure {
+    img {
+      width: 200px;
+    }
+  }
+}
+
+span.highlight {
+  color: abstracts.$color-corporate;
+}

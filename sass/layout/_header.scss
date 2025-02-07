@@ -1,89 +1,33 @@
-/* HEADER */
-
-@media (max-width: 450px) {
-  header nav {
-    display: none;
-    max-width: 100%;
-  }
-  body header .header-logo {
-    display: flex;
-    text-align: left;
-  }
-
-  body header p {
-    font-size: 50px;
-  }
-}
+@use "../components/buttons" as buttons;
+@use "../abstracts/abstracts" as abstracts;
 
 header {
-  margin: 0;
-
-  section {
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 10px 10px;
-  }
-
-  .header-logo {
-    display: flex;
-    align-items: center;
-    padding: 10px 20%;
-  }
-
-  p {
-    font-family: "Poppins-sembold";
-    font-size: clamp(2rem, 2vw, 2rem);
-
-    /* Tamaño fluido */
-    letter-spacing: -0.08rem;
-    margin: 0;
-
-    span {
-      &:first-child {
-        font-weight: 600;
-        color: var(--yellowdigitalks, #ffd133);
-      }
-
-      &:nth-of-type(2) {
-        color: white;
-      }
-
-      &:nth-of-type(3) {
-        color: #ccc;
-        font-size: clamp(1.2rem, 1.2vw, 1.2rem);
-
-        /* Tamaño fluido */
-      }
-    }
-  }
-
+  box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.3);
   nav {
-    font-family: "Poppins-med";
-    font-weight: bold;
-    margin: 0;
-    padding: 10px 10%;
-
     ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-
+      display: none;
+      @include abstracts.breakpoint(tablet) {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
       li {
-        font-size: clamp(1rem, 2vw, 1.2rem);
-
-        /* Tamaño fluido */
+        a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            color: abstracts.$color-corporate;
+          }
+        }
       }
     }
-
-    a {
-      text-decoration: none;
-      color: white;
-
-      &:hover {
-        color: var(--yellowdigitalks, #ffd133);
-      }
+    @include abstracts.breakpoint(tablet) {
+    }
+    @include abstracts.breakpoint(tablet-horizontal) {
+    }
+    @include abstracts.breakpoint(desktop) {
+    }
+    @include abstracts.breakpoint(desktop-xl) {
     }
   }
 }

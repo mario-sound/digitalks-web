@@ -1,0 +1,335 @@
+@use "../components/buttons" as buttons;
+@use "../abstracts/abstracts" as abstracts;
+
+@forward "grid";
+@forward "footer";
+@forward "forms";
+@forward "navbar";
+@forward "sidebar";
+@forward "header";
+
+// @include abstracts.breakpoint(tablet) {}
+
+section.inicio {
+  padding-bottom: 100px;
+  margin: 0 12%;
+  h1 {
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 50px 0;
+    @include abstracts.breakpoint(tablet) {
+      font-size: 3rem;
+    }
+    @include abstracts.breakpoint(tablet-horizontal) {
+      font-size: 4rem;
+    }
+    @include abstracts.breakpoint(desktop) {
+      font-size: 4rem;
+    }
+  }
+  .suenabien {
+    p {
+      font-size: 1.5rem;
+    }
+    ul {
+      padding: 80px 5%;
+      list-style: circle;
+      line-height: 2rem;
+    }
+    span {
+      color: grey;
+    }
+    span.hidden {
+      color: white;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin: 75px auto;
+
+      @include abstracts.breakpoint(desktop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+    a.button {
+      width: auto;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @extend %button;
+      @include abstracts.breakpoint(desktop) {
+        font-size: 1.2rem;
+        width: 450px;
+      }
+    }
+  }
+}
+
+section#efficiency {
+  background-color: rgb(250 250 246);
+  padding: 100px 0 100px 0;
+  .effectivity {
+    margin: 0 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 12%;
+    figure.iconsvg {
+      figcaption {
+        font-weight: 600;
+        @include abstracts.breakpoint(tablet) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    @include abstracts.breakpoint(tablet) {
+      figure.iconsvg.reloj-figure {
+        svg {
+          width: 200px;
+        }
+      }
+      figure.iconsvg.calc-figure {
+        svg {
+          width: 130px;
+        }
+      }
+    }
+  }
+  .acelera {
+    background-color: rgb(29 29 29);
+    text-align: left;
+    color: white;
+    width: 100%;
+    padding: 100px 12%;
+    font-weight: 600;
+    @include abstracts.breakpoint(tablet) {
+      font-size: 2rem;
+      text-align: center;
+    }
+    @include abstracts.breakpoint(tablethorizontal) {
+      font-size: 2.5rem;
+    }
+    @include abstracts.breakpoint(desktop) {
+      font-size: 3rem;
+    }
+  }
+  .comparativa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 100px;
+    margin: 100px 12%;
+    @include abstracts.breakpoint(tablet) {
+      justify-content: space-between;
+      gap: 0;
+      flex-direction: row;
+      text-align: left;
+    }
+    .logo {
+      width: 200px;
+      margin-bottom: 35px;
+      transform: translateY(10px);
+    }
+    .comparativa__tradicional {
+      p {
+        margin-bottom: 25px;
+        font-size: 2.1rem;
+        font-weight: 500;
+      }
+      figure {
+        svg {
+          position: absolute;
+          opacity: 0.3;
+          z-index: 0;
+          display: none;
+          transform: translate(4rem, -16rem) rotate(280deg);
+          box-sizing: border-box;
+          .cls-1 {
+            fill: red;
+            opacity: 0.3;
+          }
+          @include abstracts.breakpoint(tablet) {
+            transform: translate(5rem, -16rem) rotate(280deg);
+          }
+          @include abstracts.breakpoint(tablethorizontal) {
+            transform: translate(5rem, -16rem) rotate(280deg);
+          }
+          @include abstracts.breakpoint(desktop) {
+            display: flex;
+            .cls-1 {
+              fill: abstracts.$color-corporate;
+              opacity: 0.6;
+            }
+            &:hover {
+              .cls-1 {
+                fill: red;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      line-height: 2rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      @include abstracts.breakpoint(desktop) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  section.aclarativo {
+    color: grey;
+    font-size: 1rem;
+    margin: 0px 12%;
+  }
+}
+section#human-ia {
+  padding: 100px 0;
+  margin: 0px 12%;
+  h2 {
+    font-size: 2.5rem;
+    padding-bottom: 50px;
+  }
+  p.human-ia__nextlevel {
+    font-size: 1.5rem;
+    strong {
+      font-weight: 500;
+    }
+  }
+  .pasos-movil > p {
+    padding: 50px 0 20px 0;
+    font-size: 2rem;
+    color: rgb(29 29 29);
+  }
+  ol {
+    padding: 5% 2%;
+    @include abstracts.breakpoint(tablet) {
+      border: 1px solid rgba(29, 29, 2, 0.5);
+      box-shadow: 0px -1px 10px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 25px;
+      background-color: rgb(250 250 246);
+    }
+    li {
+      padding: 20px 0;
+      p {
+        font-weight: 600;
+        @include abstracts.breakpoint(tablet) {
+          font-size: 1.5rem;
+          padding: 10px;
+        }
+      }
+    }
+    ::marker {
+      font-size: 1.1rem;
+      color: abstracts.$color-corporate;
+    }
+    figure {
+      padding: 50px 0 10px 0;
+      display: flex;
+      justify-content: center;
+      svg {
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+  }
+}
+
+section#demos {
+  svg {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  color: white;
+  background-color: rgb(29 29 29);
+  padding: 100px 12%;
+  h2 {
+    font-size: 3rem;
+    padding-bottom: 50px;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 50px 0;
+  }
+  article {
+    padding: 0 0 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    figure {
+      align-self: center;
+      justify-items: center;
+    }
+  }
+  svg {
+    display: none;
+    @include abstracts.breakpoint(tablet) {
+      display: flex;
+    }
+
+    .cls-1 {
+      fill: white;
+    }
+    .cls-2 {
+      fill: black;
+    }
+    .cls-3 {
+      fill: abstracts.$color-corporate;
+    }
+  }
+  .demo-rrss.titulonudista {
+    padding: 0 0 50px 0;
+  }
+  iframe {
+    max-width: 250px;
+    @include abstracts.breakpoint(tablet) {
+      max-width: 450px;
+    }
+  }
+}
+
+section#contact-form {
+  h2 {
+    font-size: 1.2rem;
+    margin: 50px 12%;
+    font-weight: 500;
+    @include abstracts.breakpoint(tablet) {
+      font-size: 2rem;
+      text-align: center;
+      height: 2px;
+      margin: 100px 12%;
+    }
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    p {
+      color: rgb(29 29 29);
+      margin: 0 0 20px 12%;
+      @include abstracts.breakpoint(tablet) {
+        margin: 0;
+        padding: 50px;
+        font-size: 1.5rem;
+      }
+    }
+    @include abstracts.breakpoint(tablet) {
+      align-items: center;
+    }
+  }
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 250px;
+  }
+}

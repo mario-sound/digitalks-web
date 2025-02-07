@@ -1,0 +1,13 @@
+@use "./abstracts/abstracts";
+@use "./vendors/vendors";
+@use "./base/base";
+@use "./components/components";
+@use "./layout/layout";
+@use "./pages/pages";
+@use "./themes/themes";
+@use "settings";
+
+html {
+  font-family: abstracts.$primary-font;
+  font-size: abstracts.$global-font-size;
+}

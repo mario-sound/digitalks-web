@@ -1,0 +1,76 @@
+@use "../components/buttons" as buttons;
+@use "../abstracts/abstracts" as abstracts;
+@forward "default";
+
+header,
+footer {
+  background: black;
+  padding: 20px 50px;
+  box-shadow: 0px -1px 10px 5px rgba(0, 0, 0, 0.3);
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: none;
+      @include abstracts.breakpoint(tablet) {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
+    }
+  }
+  @include abstracts.breakpoint(phone) {
+  }
+  @include abstracts.breakpoint(tablet) {
+  }
+  @include abstracts.breakpoint(tablet-horizontal) {
+  }
+  @include abstracts.breakpoint(desktop) {
+  }
+  @include abstracts.breakpoint(desktop-xl) {
+  }
+}
+a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: abstracts.$color-corporate;
+  }
+}
+
+svg {
+  max-width: 150px;
+}
+
+.hook {
+  background-color: abstracts.$color-corporate;
+  font-weight: 600;
+  padding: 100px 12%;
+  box-shadow: 0px -1px 10px 5px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  p.quote {
+    font-size: 1.2rem;
+  }
+  @include abstracts.breakpoint(tablet) {
+    font-size: 3rem;
+    p.quote {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+}
+
+svg {
+  .cls-1 {
+    fill: abstracts.$color-corporate;
+    fill-rule: evenodd;
+  }
+  .cls-2 {
+    fill: black;
+    fill-rule: evenodd;
+  }
+  .cls-3 {
+    fill: grey;
+  }
+}

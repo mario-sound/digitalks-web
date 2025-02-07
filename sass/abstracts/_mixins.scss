@@ -1,30 +1,32 @@
+@use "./variables" as vars;
+
 @mixin breakpoint($bp) {
   @if $bp == phone {
-    @media (min-width: $bp-tablet) {
+    @media (min-width: vars.$bp-phone) {
       @content;
     }
   }
 
   @if $bp == tablet {
-    @media (min-width: $bp-tablet) {
+    @media (min-width: vars.$bp-tablet) {
       @content;
     }
   }
 
   @if $bp == tablethorizontal {
-    @media (min-width: $bp-tablet-horizontal) {
+    @media (min-width: vars.$bp-tablet-horizontal) {
       @content;
     }
   }
 
   @if $bp == desktop {
-    @media (min-width: $bp-desktop) {
+    @media (min-width: vars.$bp-desktop) {
       @content;
     }
   }
 
   @if $bp == desktopxl {
-    @media (min-width: $bp-desktop-xl) {
+    @media (min-width: vars.$bp-desktop-xl) {
       @content;
     }
   }
