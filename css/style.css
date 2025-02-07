@@ -399,7 +399,7 @@ section#efficiency .comparativa .comparativa__tradicional p {
 }
 section#efficiency .comparativa .comparativa__tradicional figure svg {
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.35;
   z-index: 0;
   display: none;
   transform: translate(4rem, -16rem) rotate(280deg);
