@@ -195,6 +195,38 @@ section.inicio .suenabien a.button:hover {
   transform: translateY(-3px);
 }
 
+a.wasap-btn {
+  display: inline-block;
+  fill: #25d366;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+@media (min-width: 768px) {
+  a.wasap-btn {
+    bottom: 50px;
+    right: 50px;
+  }
+}
+a.wasap-btn svg {
+  width: 35px;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+}
+@media (min-width: 768px) {
+  a.wasap-btn svg {
+    width: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  a.wasap-btn svg {
+    width: 65px;
+  }
+}
+a.wasap-btn:hover svg {
+  fill: #ffd133;
+}
+
 footer nav {
   display: flex;
   flex-direction: column;

@@ -1,1 +1,32 @@
 @forward "buttons";
+@use "../abstracts/abstracts" as abstracts;
+
+a.wasap-btn {
+  display: inline-block;
+  fill: (#25d366);
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  @include abstracts.breakpoint(tablet) {
+    bottom: 50px;
+    right: 50px;
+  }
+
+  svg {
+    width: 35px;
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    @include abstracts.breakpoint(tablet) {
+      width: 60px;
+    }
+    @include abstracts.breakpoint(desktop) {
+      width: 65px;
+    }
+  }
+  &:hover {
+    svg {
+      fill: abstracts.$color-corporate;
+    }
+  }
+}
