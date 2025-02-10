@@ -1,7 +1,7 @@
 @forward "buttons";
 @use "../abstracts/abstracts" as abstracts;
 
-a.wasap-btn {
+a#whatsapp-btn {
   display: inline-block;
   fill: (#25d366);
   border-radius: 50%;
@@ -22,6 +22,7 @@ a.wasap-btn {
     @include abstracts.breakpoint(desktop) {
       width: 65px;
     }
+    transition: all 0.2s ease;
   }
   &:hover {
     svg {

@@ -152,6 +152,7 @@ section#efficiency {
           .cls-1 {
             fill: red;
             opacity: 0.3;
+            transition: all 0.8s ease;
           }
           @include abstracts.breakpoint(tablet) {
             transform: translate(5rem, -16rem) rotate(280deg);

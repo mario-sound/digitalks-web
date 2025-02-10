@@ -188,6 +188,7 @@ section.inicio .suenabien a.button {
   background-color: #ffd133;
   color: black;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 section.inicio .suenabien a.button:hover {
   background-color: rgb(255, 197.5, 0);
@@ -195,7 +196,7 @@ section.inicio .suenabien a.button:hover {
   transform: translateY(-3px);
 }
 
-a.wasap-btn {
+a#whatsapp-btn {
   display: inline-block;
   fill: #25d366;
   border-radius: 50%;
@@ -204,26 +205,27 @@ a.wasap-btn {
   right: 20px;
 }
 @media (min-width: 768px) {
-  a.wasap-btn {
+  a#whatsapp-btn {
     bottom: 50px;
     right: 50px;
   }
 }
-a.wasap-btn svg {
+a#whatsapp-btn svg {
   width: 35px;
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  transition: all 0.2s ease;
 }
 @media (min-width: 768px) {
-  a.wasap-btn svg {
+  a#whatsapp-btn svg {
     width: 60px;
   }
 }
 @media (min-width: 1200px) {
-  a.wasap-btn svg {
+  a#whatsapp-btn svg {
     width: 65px;
   }
 }
-a.wasap-btn:hover svg {
+a#whatsapp-btn:hover svg {
   fill: #ffd133;
 }
 
@@ -440,6 +442,7 @@ section#efficiency .comparativa .comparativa__tradicional figure svg {
 section#efficiency .comparativa .comparativa__tradicional figure svg .cls-1 {
   fill: red;
   opacity: 0.3;
+  transition: all 0.8s ease;
 }
 @media (min-width: 768px) {
   section#efficiency .comparativa .comparativa__tradicional figure svg {
@@ -674,6 +677,7 @@ footer nav ul {
 a {
   color: white;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 a:hover {
   color: #ffd133;

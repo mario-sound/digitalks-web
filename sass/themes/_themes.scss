@@ -34,6 +34,7 @@ footer {
 a {
   color: white;
   text-decoration: none;
+  transition: all 0.2s ease;
   &:hover {
     color: abstracts.$color-corporate;
   }
