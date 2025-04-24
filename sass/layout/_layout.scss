@@ -7,66 +7,162 @@
 @forward "navbar";
 @forward "sidebar";
 @forward "header";
+@forward "landing";
 
 // @include abstracts.breakpoint(tablet) {}
 
-section.inicio {
+.acelera {
+  background-color: rgb(29 29 29);
+  text-align: left;
+  color: white;
+  width: 100vw;
+  padding: 100px 12%;
+  position: relative;
+  font-weight: 600;
+  @include abstracts.breakpoint(tablet) {
+    font-size: 2rem;
+    text-align: center;
+  }
+  @include abstracts.breakpoint(tablethorizontal) {
+    font-size: 2.5rem;
+  }
+  @include abstracts.breakpoint(desktop) {
+    font-size: 3rem;
+  }
+}
+h1 {
   padding-bottom: 100px;
   margin: 0 12%;
-  h1 {
-    font-size: 2.2rem;
-    text-align: left;
-    padding: 50px 0;
-    @include abstracts.breakpoint(tablet) {
-      font-size: 3rem;
-    }
-    @include abstracts.breakpoint(tablet-horizontal) {
-      font-size: 4rem;
-    }
+  font-size: 2.2rem;
+  text-align: left;
+  padding: 50px 0;
+  @include abstracts.breakpoint(tablet) {
+    font-size: 3rem;
+  }
+  @include abstracts.breakpoint(tablet-horizontal) {
+    font-size: 4rem;
+  }
+  @include abstracts.breakpoint(desktop) {
+    font-size: 4rem;
+  }
+}
+
+.suenabien {
+  margin: 0 12%;
+  padding-top: 100px;
+  p {
+    font-size: 1.5rem;
+  }
+  ul {
+    padding: 80px 5%;
+    list-style: circle;
+    line-height: 2rem;
+  }
+  span {
+    color: grey;
+  }
+  span.hidden {
+    color: white;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 75px auto;
+
     @include abstracts.breakpoint(desktop) {
-      font-size: 4rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
-  .suenabien {
+  a.button {
+    width: auto;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %button;
+    @include abstracts.breakpoint(desktop) {
+      font-size: 1.2rem;
+      width: 450px;
+    }
+  }
+}
+
+.comparativa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 100px;
+  margin: 100px 12%;
+  @include abstracts.breakpoint(tablet) {
+    justify-content: space-between;
+    gap: 0;
+    flex-direction: row;
+    text-align: left;
+  }
+  .logo {
+    width: 200px;
+    margin-bottom: 35px;
+    transform: translateY(10px);
+  }
+  .comparativa__tradicional {
     p {
+      margin-bottom: 25px;
+      font-size: 2.1rem;
+      font-weight: 500;
+    }
+    figure {
+      svg {
+        position: absolute;
+        opacity: 0.35;
+        z-index: 0;
+        display: none;
+        transform: translate(4rem, -16rem) rotate(280deg);
+        box-sizing: border-box;
+        .cls-1 {
+          fill: red;
+          opacity: 0.3;
+          transition: all 0.8s ease;
+        }
+        @include abstracts.breakpoint(tablet) {
+          transform: translate(5rem, -16rem) rotate(280deg);
+        }
+        @include abstracts.breakpoint(tablethorizontal) {
+          transform: translate(5rem, -16rem) rotate(280deg);
+        }
+        @include abstracts.breakpoint(desktop) {
+          display: flex;
+          .cls-1 {
+            fill: abstracts.$color-corporate;
+            opacity: 0.6;
+          }
+          &:hover {
+            .cls-1 {
+              fill: red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    @include abstracts.breakpoint(desktop) {
       font-size: 1.5rem;
     }
-    ul {
-      padding: 80px 5%;
-      list-style: circle;
-      line-height: 2rem;
-    }
-    span {
-      color: grey;
-    }
-    span.hidden {
-      color: white;
-    }
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-      margin: 75px auto;
-
-      @include abstracts.breakpoint(desktop) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-    }
-    a.button {
-      width: auto;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      @extend %button;
-      @include abstracts.breakpoint(desktop) {
-        font-size: 1.2rem;
-        width: 450px;
-      }
-    }
   }
+}
+section.aclarativo {
+  color: grey;
+  font-size: 1rem;
+  margin: 0px 12%;
 }
 
 section#efficiency {
@@ -99,99 +195,8 @@ section#efficiency {
       }
     }
   }
-  .acelera {
-    background-color: rgb(29 29 29);
-    text-align: left;
-    color: white;
-    width: 100%;
-    padding: 100px 12%;
-    font-weight: 600;
-    @include abstracts.breakpoint(tablet) {
-      font-size: 2rem;
-      text-align: center;
-    }
-    @include abstracts.breakpoint(tablethorizontal) {
-      font-size: 2.5rem;
-    }
-    @include abstracts.breakpoint(desktop) {
-      font-size: 3rem;
-    }
-  }
-  .comparativa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    gap: 100px;
-    margin: 100px 12%;
-    @include abstracts.breakpoint(tablet) {
-      justify-content: space-between;
-      gap: 0;
-      flex-direction: row;
-      text-align: left;
-    }
-    .logo {
-      width: 200px;
-      margin-bottom: 35px;
-      transform: translateY(10px);
-    }
-    .comparativa__tradicional {
-      p {
-        margin-bottom: 25px;
-        font-size: 2.1rem;
-        font-weight: 500;
-      }
-      figure {
-        svg {
-          position: absolute;
-          opacity: 0.35;
-          z-index: 0;
-          display: none;
-          transform: translate(4rem, -16rem) rotate(280deg);
-          box-sizing: border-box;
-          .cls-1 {
-            fill: red;
-            opacity: 0.3;
-            transition: all 0.8s ease;
-          }
-          @include abstracts.breakpoint(tablet) {
-            transform: translate(5rem, -16rem) rotate(280deg);
-          }
-          @include abstracts.breakpoint(tablethorizontal) {
-            transform: translate(5rem, -16rem) rotate(280deg);
-          }
-          @include abstracts.breakpoint(desktop) {
-            display: flex;
-            .cls-1 {
-              fill: abstracts.$color-corporate;
-              opacity: 0.6;
-            }
-            &:hover {
-              .cls-1 {
-                fill: red;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    ul {
-      list-style: none;
-      line-height: 2rem;
-      font-weight: 500;
-      font-size: 1.2rem;
-      @include abstracts.breakpoint(desktop) {
-        font-size: 1.5rem;
-      }
-    }
-  }
-  section.aclarativo {
-    color: grey;
-    font-size: 1rem;
-    margin: 0px 12%;
-  }
 }
+
 section#human-ia {
   padding: 100px 0;
   margin: 0px 12%;

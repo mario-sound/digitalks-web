@@ -177,7 +177,7 @@
   font-style: normal;
   font-display: swap;
 }
-section.inicio .suenabien a.button {
+.suenabien a.button {
   display: inline-block;
   font-weight: 600;
   font-size: 1.2rem;
@@ -190,7 +190,7 @@ section.inicio .suenabien a.button {
   text-decoration: none;
   transition: all 0.2s ease;
 }
-section.inicio .suenabien a.button:hover {
+.suenabien a.button:hover {
   background-color: rgb(255, 197.5, 0);
   box-shadow: 0px 5px 12px black;
   transform: translateY(-3px);
@@ -294,53 +294,168 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #ffd133;
 }
-section.inicio {
+.landing-guide {
+  background: linear-gradient(160deg, rgb(0, 0, 0) 0%, rgb(29, 29, 29) 50%, rgb(49, 49, 49) 100%);
+}
+
+.landing-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .landing-container {
+    padding: 4rem 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .landing-container {
+    max-width: 1000px;
+    padding: 6rem 4rem;
+  }
+}
+
+.landing-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .landing-title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .landing-title {
+    font-size: 3rem;
+  }
+}
+
+.landing-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #a4a4a4;
+}
+@media (min-width: 768px) {
+  .landing-subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .landing-subtitle {
+    font-size: 1.7rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+}
+
+.landing-form iframe {
+  width: 100%;
+  height: 900px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+@media (min-width: 768px) {
+  .landing-form iframe {
+    height: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .landing-form iframe {
+    height: 900px;
+  }
+}
+
+.header-landing,
+.footer-landing {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.header-landing ul,
+.footer-landing ul {
+  list-style: none;
+}
+
+.acelera {
+  background-color: rgb(29, 29, 29);
+  text-align: left;
+  color: white;
+  width: 100vw;
+  padding: 100px 12%;
+  position: relative;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .acelera {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .acelera {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .acelera {
+    font-size: 3rem;
+  }
+}
+
+h1 {
   padding-bottom: 100px;
   margin: 0 12%;
-}
-section.inicio h1 {
   font-size: 2.2rem;
   text-align: left;
   padding: 50px 0;
 }
 @media (min-width: 768px) {
-  section.inicio h1 {
+  h1 {
     font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
-  section.inicio h1 {
+  h1 {
     font-size: 4rem;
   }
 }
-section.inicio .suenabien p {
+
+.suenabien {
+  margin: 0 12%;
+  padding-top: 100px;
+}
+.suenabien p {
   font-size: 1.5rem;
 }
-section.inicio .suenabien ul {
+.suenabien ul {
   padding: 80px 5%;
   list-style: circle;
   line-height: 2rem;
 }
-section.inicio .suenabien span {
+.suenabien span {
   color: grey;
 }
-section.inicio .suenabien span.hidden {
+.suenabien span.hidden {
   color: white;
 }
-section.inicio .suenabien .buttons {
+.suenabien .buttons {
   display: flex;
   flex-direction: column;
   gap: 50px;
   margin: 75px auto;
 }
 @media (min-width: 1200px) {
-  section.inicio .suenabien .buttons {
+  .suenabien .buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
 }
-section.inicio .suenabien a.button {
+.suenabien a.button {
   width: auto;
   font-size: 1rem;
   display: flex;
@@ -348,10 +463,89 @@ section.inicio .suenabien a.button {
   justify-content: center;
 }
 @media (min-width: 1200px) {
-  section.inicio .suenabien a.button {
+  .suenabien a.button {
     font-size: 1.2rem;
     width: 450px;
   }
+}
+
+.comparativa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 100px;
+  margin: 100px 12%;
+}
+@media (min-width: 768px) {
+  .comparativa {
+    justify-content: space-between;
+    gap: 0;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+.comparativa .logo {
+  width: 200px;
+  margin-bottom: 35px;
+  transform: translateY(10px);
+}
+.comparativa .comparativa__tradicional p {
+  margin-bottom: 25px;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.comparativa .comparativa__tradicional figure svg {
+  position: absolute;
+  opacity: 0.35;
+  z-index: 0;
+  display: none;
+  transform: translate(4rem, -16rem) rotate(280deg);
+  box-sizing: border-box;
+}
+.comparativa .comparativa__tradicional figure svg .cls-1 {
+  fill: red;
+  opacity: 0.3;
+  transition: all 0.8s ease;
+}
+@media (min-width: 768px) {
+  .comparativa .comparativa__tradicional figure svg {
+    transform: translate(5rem, -16rem) rotate(280deg);
+  }
+}
+@media (min-width: 1024px) {
+  .comparativa .comparativa__tradicional figure svg {
+    transform: translate(5rem, -16rem) rotate(280deg);
+  }
+}
+@media (min-width: 1200px) {
+  .comparativa .comparativa__tradicional figure svg {
+    display: flex;
+  }
+  .comparativa .comparativa__tradicional figure svg .cls-1 {
+    fill: #ffd133;
+    opacity: 0.6;
+  }
+  .comparativa .comparativa__tradicional figure svg:hover .cls-1 {
+    fill: red;
+  }
+}
+.comparativa ul {
+  list-style: none;
+  line-height: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+@media (min-width: 1200px) {
+  .comparativa ul {
+    font-size: 1.5rem;
+  }
+}
+
+section.aclarativo {
+  color: grey;
+  font-size: 1rem;
+  margin: 0px 12%;
 }
 
 section#efficiency {
@@ -380,107 +574,6 @@ section#efficiency .effectivity figure.iconsvg figcaption {
   section#efficiency .effectivity figure.iconsvg.calc-figure svg {
     width: 130px;
   }
-}
-section#efficiency .acelera {
-  background-color: rgb(29, 29, 29);
-  text-align: left;
-  color: white;
-  width: 100%;
-  padding: 100px 12%;
-  font-weight: 600;
-}
-@media (min-width: 768px) {
-  section#efficiency .acelera {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-@media (min-width: 1024px) {
-  section#efficiency .acelera {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 1200px) {
-  section#efficiency .acelera {
-    font-size: 3rem;
-  }
-}
-section#efficiency .comparativa {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
-  gap: 100px;
-  margin: 100px 12%;
-}
-@media (min-width: 768px) {
-  section#efficiency .comparativa {
-    justify-content: space-between;
-    gap: 0;
-    flex-direction: row;
-    text-align: left;
-  }
-}
-section#efficiency .comparativa .logo {
-  width: 200px;
-  margin-bottom: 35px;
-  transform: translateY(10px);
-}
-section#efficiency .comparativa .comparativa__tradicional p {
-  margin-bottom: 25px;
-  font-size: 2.1rem;
-  font-weight: 500;
-}
-section#efficiency .comparativa .comparativa__tradicional figure svg {
-  position: absolute;
-  opacity: 0.35;
-  z-index: 0;
-  display: none;
-  transform: translate(4rem, -16rem) rotate(280deg);
-  box-sizing: border-box;
-}
-section#efficiency .comparativa .comparativa__tradicional figure svg .cls-1 {
-  fill: red;
-  opacity: 0.3;
-  transition: all 0.8s ease;
-}
-@media (min-width: 768px) {
-  section#efficiency .comparativa .comparativa__tradicional figure svg {
-    transform: translate(5rem, -16rem) rotate(280deg);
-  }
-}
-@media (min-width: 1024px) {
-  section#efficiency .comparativa .comparativa__tradicional figure svg {
-    transform: translate(5rem, -16rem) rotate(280deg);
-  }
-}
-@media (min-width: 1200px) {
-  section#efficiency .comparativa .comparativa__tradicional figure svg {
-    display: flex;
-  }
-  section#efficiency .comparativa .comparativa__tradicional figure svg .cls-1 {
-    fill: #ffd133;
-    opacity: 0.6;
-  }
-  section#efficiency .comparativa .comparativa__tradicional figure svg:hover .cls-1 {
-    fill: red;
-  }
-}
-section#efficiency .comparativa ul {
-  list-style: none;
-  line-height: 2rem;
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-@media (min-width: 1200px) {
-  section#efficiency .comparativa ul {
-    font-size: 1.5rem;
-  }
-}
-section#efficiency section.aclarativo {
-  color: grey;
-  font-size: 1rem;
-  margin: 0px 12%;
 }
 
 section#human-ia {

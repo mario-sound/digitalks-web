@@ -1,0 +1,94 @@
+@use "../components/buttons" as buttons;
+@use "../abstracts/abstracts" as abstracts;
+
+@forward "grid";
+@forward "footer";
+@forward "forms";
+@forward "navbar";
+@forward "sidebar";
+@forward "header";
+
+.landing-guide {
+  background: linear-gradient(
+    160deg,
+    rgb(0, 0, 0) 0%,
+    rgba(29, 29, 29, 1) 50%,
+    rgb(49, 49, 49) 100%
+  );
+}
+
+.landing-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  @include abstracts.breakpoint(tablet) {
+    padding: 4rem 2rem;
+  }
+
+  @include abstracts.breakpoint(desktop) {
+    max-width: 1000px;
+    padding: 6rem 4rem;
+  }
+}
+
+.landing-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+  @include abstracts.breakpoint(tablet) {
+    font-size: 2.5rem;
+  }
+
+  @include abstracts.breakpoint(desktop) {
+    font-size: 3rem;
+  }
+}
+
+.landing-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #a4a4a4;
+
+  @include abstracts.breakpoint(tablet) {
+    font-size: 1.5rem;
+  }
+
+  @include abstracts.breakpoint(desktop) {
+    font-size: 1.7rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+}
+
+.landing-form {
+  iframe {
+    width: 100%;
+    height: 900px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+
+    @include abstracts.breakpoint(tablet) {
+      height: 900px;
+    }
+
+    @include abstracts.breakpoint(desktop) {
+      height: 900px;
+    }
+  }
+}
+
+.header-landing,
+.footer-landing {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+
+  ul {
+    list-style: none;
+  }
+}
