@@ -33,11 +33,15 @@
   }
 }
 
+.landing-hero {
+  padding: auto;
+}
+
 .landing-title {
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 
   @include abstracts.breakpoint(tablet) {
     font-size: 2.5rem;
@@ -46,6 +50,32 @@
   @include abstracts.breakpoint(desktop) {
     font-size: 3rem;
   }
+}
+.monocode-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  padding-left: 2rem;
+  font-size: 0.8rem;
+  @include abstracts.breakpoint(tablet) {
+    padding-left: 4.4rem;
+    font-size: 1rem;
+  }
+
+  @include abstracts.breakpoint(desktop) {
+  }
+}
+.monocode {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -90px;
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: 100;
+  color: #d1d1d1;
 }
 
 .landing-subtitle {
