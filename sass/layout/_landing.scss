@@ -52,15 +52,44 @@
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #a4a4a4;
+  text-align: left;
 
   @include abstracts.breakpoint(tablet) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   @include abstracts.breakpoint(desktop) {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     max-width: 700px;
     margin: 0 auto 2rem;
+  }
+}
+
+.landing-instructions {
+  margin-top: 1rem;
+  text-align: left;
+  color: #d1d1d1; // Gris claro para buena lectura sobre fondo oscuro
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 1.5rem;
+
+  @include abstracts.breakpoint(tablet) {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 2rem auto 0;
+  }
+
+  @include abstracts.breakpoint(desktop) {
+    font-size: 1.3rem;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 1rem;
   }
 }
 
