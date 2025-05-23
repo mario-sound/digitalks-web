@@ -794,6 +794,42 @@ section#contact-form figure {
   width: 250px;
 }
 
+#privacy-policy main.policy-content {
+  padding: 3rem 2rem;
+  background-color: #121212;
+}
+#privacy-policy main.policy-content h1 {
+  font-size: 2.5rem;
+  color: #ffd133;
+  margin-bottom: 1.5rem;
+}
+#privacy-policy main.policy-content h2 {
+  font-size: 1.8rem;
+  color: #a4a4a4;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#privacy-policy main.policy-content p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+#privacy-policy main.policy-content ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+#privacy-policy main.policy-content ul li {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+#privacy-policy main.policy-content a {
+  color: rgb(33, 197, 244);
+  text-decoration: underline;
+}
+#privacy-policy main.policy-content a:hover {
+  color: #ffd133;
+}
+
 a.header-logo figure img {
   width: 200px;
 }
