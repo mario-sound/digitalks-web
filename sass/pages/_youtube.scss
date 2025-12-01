@@ -1,0 +1,264 @@
+/* CONTENEDOR GENERAL */
+.landing-youtube-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 0px;
+  padding: auto;
+  height: 70vh;
+  margin: auto;
+}
+
+/* COLUMNA IZQUIERDA */
+.landing-youtube-left {
+  max-width: 60%;
+  position: absolute;
+  left: 15%;
+  top: 18%;
+}
+
+/* TITULAR */
+h1.landing-youtube {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  line-height: 0.8;
+
+  .landing-youtube-line1,
+  .landing-youtube-line2 {
+    font-size: 1.5em;
+    letter-spacing: 0.1px;
+  }
+
+  .landing-youtube-red {
+    color: #c4302b; /* rojo YouTube */
+  }
+
+  .landing-youtube-fontsize {
+    display: inline-block;
+    margin-top: 10px;
+
+    .landing-youtube-yellow {
+      font-size: 3.5em; /* tamaño gigante */
+      color: #ffd113; /* amarillo */
+      font-weight: 900;
+    }
+
+    .landing-youtube-exclamation {
+      font-size: 3.5em;
+      font-weight: 900;
+    }
+  }
+}
+
+/* COLUMNA DERECHA */
+.landing-youtube-right {
+  text-align: right;
+  position: absolute;
+  right: 15%;
+  top: 18%;
+}
+
+/* IMAGEN PERRO GLOBO */
+.landing-youtube-img {
+  width: 400px;
+  height: auto;
+  display: inline-block;
+  margin: 0 60px 20px 0;
+}
+
+/* TAGLINE */
+.landing-youtube-tagline-1 {
+  font-size: 2.8em;
+  margin: 10px;
+  font-family: "Poppins";
+  font-weight: 700;
+  letter-spacing: -4px;
+  line-height: 0.8;
+}
+
+.landing-youtube-tagline-2 {
+  font-size: 2.8em;
+  font-family: "Poppins";
+  font-weight: 300;
+  letter-spacing: -4px;
+  line-height: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .landing-youtube-hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .landing-youtube-left {
+    max-width: 100%;
+  }
+
+  h1.landing-youtube {
+    .landing-youtube-line1,
+    .landing-youtube-line2 {
+      font-size: 2.8em;
+    }
+
+    .landing-youtube-fontsize {
+      .landing-youtube-yellow,
+      .landing-youtube-exclamation {
+        font-size: 2.5em;
+      }
+    }
+  }
+
+  .landing-youtube-img {
+    width: 260px;
+  }
+
+  .landing-youtube-tagline-1 {
+    font-size: 2.2em;
+  }
+
+  .landing-youtube-tagline-2 {
+    font-size: 1.4em;
+  }
+}
+
+/// VIDEO DEMO SECTION
+.video-demo {
+  background: #131313;
+
+  .video-demo-iframe {
+    display: flex;
+    justify-content: center;
+    padding: 5% 15%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  /* El propio contenedor del vídeo */
+  .video-demo-iframe lite-youtube {
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .video-demo-button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+
+  .cta-llamada {
+    background: #ffd113;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: -3px;
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.45);
+    transition: transform 0.2s ease, box-shadow 0.25s ease,
+      background-color 0.2s;
+  }
+
+  /* HOVER */
+  .cta-llamada:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 65px rgba(255, 0, 0, 0.55);
+    background-color: white;
+  }
+}
+
+.millones-espectadores {
+  background: #ffffff;
+  padding: 80px 0;
+
+  .millones-wrapper {
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .millones-titulo {
+    margin: 0 0 40px 0;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    line-height: 0.9;
+    letter-spacing: -2.2px;
+    color: #000;
+
+    .millones-yellow {
+      color: #ffd113;
+    }
+
+    .millones-red {
+      color: #c4302b;
+    }
+  }
+
+  .millones-texto {
+    font-family: "Poppins", system-ui, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #111;
+
+    ul {
+      margin: 40px 0 40px 1.5rem;
+      padding: 0;
+      line-height: 1;
+      li {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .millones-frase {
+    margin-top: 40px;
+    font-size: 2.8rem;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    font-weight: 300;
+    color: #111;
+
+    .millones-frase-strong {
+      font-weight: 700;
+    }
+  }
+
+  .millones-nota {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #7a7a7a;
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    padding: 60px 0;
+
+    .millones-wrapper {
+      padding: 0 20px;
+    }
+
+    .millones-titulo {
+      font-size: 3rem;
+    }
+
+    .millones-texto {
+      font-size: 1.05rem;
+    }
+
+    .millones-frase {
+      font-size: 1.8rem;
+    }
+  }
+}
