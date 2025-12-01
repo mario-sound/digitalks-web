@@ -7,6 +7,11 @@
   padding: auto;
   height: 70vh;
   margin: auto;
+  @media (max-width: 992px) {
+    height: 100%;
+  }
+}
+@media (max-width: 992px) {
 }
 
 /* COLUMNA IZQUIERDA */
@@ -15,6 +20,13 @@
   position: absolute;
   left: 15%;
   top: 18%;
+  @media (max-width: 992px) {
+    max-width: 100%;
+    position: inherit;
+    margin: auto;
+    padding: 0 50px;
+    margin: 0;
+  }
 }
 
 /* TITULAR */
@@ -57,6 +69,13 @@ h1.landing-youtube {
   position: absolute;
   right: 15%;
   top: 18%;
+  @media (max-width: 992px) {
+    max-width: 100%;
+    position: inherit;
+    margin: auto;
+    padding: 0 0 50px 50px;
+    margin: 0;
+  }
 }
 
 /* IMAGEN PERRO GLOBO */
@@ -65,6 +84,10 @@ h1.landing-youtube {
   height: auto;
   display: inline-block;
   margin: 0 60px 20px 0;
+  @media (max-width: 992px) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /* TAGLINE */
@@ -86,23 +109,38 @@ h1.landing-youtube {
 }
 
 /* RESPONSIVE */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .landing-youtube-hero {
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    height: auto; // muy importante: que crezca con el contenido
+    padding: 40px 20px 60px; // respirito en móvil
   }
 
-  .landing-youtube-left {
+  .landing-youtube-left,
+  .landing-youtube-right {
     max-width: 100%;
+    position: static; // quitamos absolute en móvil
+    left: auto;
+    top: auto;
+    text-align: center;
+    margin: 0;
+  }
+  .landing-youtube-right {
+    display: none;
   }
 
   h1.landing-youtube {
     .landing-youtube-line1,
     .landing-youtube-line2 {
-      font-size: 2.8em;
+      font-size: 1.5em;
     }
 
     .landing-youtube-fontsize {
+      margin-top: 12px;
+
       .landing-youtube-yellow,
       .landing-youtube-exclamation {
         font-size: 2.5em;
@@ -112,14 +150,18 @@ h1.landing-youtube {
 
   .landing-youtube-img {
     width: 260px;
+    height: auto;
+    margin: 24px auto 8px;
+    display: block;
+    z-index: 1;
   }
 
-  .landing-youtube-tagline-1 {
-    font-size: 2.2em;
-  }
-
+  .landing-youtube-tagline-1,
   .landing-youtube-tagline-2 {
-    font-size: 1.4em;
+    font-size: 1.6em;
+    word-spacing: 1px;
+    line-height: 1.1;
+    margin: 4px 0;
   }
 }
 
@@ -166,23 +208,58 @@ h1.landing-youtube {
     transition: transform 0.2s ease, box-shadow 0.25s ease,
       background-color 0.2s;
   }
+  @media (max-width: 992px) {
+    .video-demo-iframe lite-youtube {
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 8px;
+    }
 
-  /* HOVER */
-  .cta-llamada:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 65px rgba(255, 0, 0, 0.55);
-    background-color: white;
+    .video-demo-button-wrapper {
+      display: flex;
+      justify-content: center; // <-- esto centra el botón
+      align-items: center;
+      width: 100%; // <-- ocupar todo el ancho
+      margin: 40px 0 60px;
+      padding: 0 20px;
+      padding-bottom: 40px;
+    }
+
+    .cta-llamada {
+      background: #ffd113;
+      color: #000;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      text-decoration: none;
+      padding: 16px 32px; // <-- más compacto en móvil
+      border-radius: 8px;
+      display: inline-block;
+      text-align: center;
+    }
   }
 }
 
 .millones-espectadores {
   background: #ffffff;
   padding: 80px 0;
+  @media (max-width: 992px) {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
   .millones-wrapper {
     max-width: 65%;
     margin: 0 auto;
     padding: 0 40px;
+  }
+  @media (min-width: 992px) {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .millones-titulo {
