@@ -1061,8 +1061,6 @@ h1.landing-youtube .landing-youtube-fontsize .landing-youtube-exclamation {
 @media (min-width: 992px) {
   .millones-espectadores {
     max-width: 100%;
-    padding: 0;
-    margin: 0;
   }
 }
 .millones-espectadores .millones-titulo {
