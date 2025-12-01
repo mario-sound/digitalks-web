@@ -135,7 +135,7 @@ h1.landing-youtube {
   h1.landing-youtube {
     .landing-youtube-line1,
     .landing-youtube-line2 {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
 
     .landing-youtube-fontsize {
@@ -143,7 +143,7 @@ h1.landing-youtube {
 
       .landing-youtube-yellow,
       .landing-youtube-exclamation {
-        font-size: 2.5em;
+        font-size: 2em;
       }
     }
   }
@@ -214,6 +214,7 @@ h1.landing-youtube {
       max-width: 100%;
       aspect-ratio: 16/9;
       border-radius: 8px;
+      margin-top: 25px;
     }
 
     .video-demo-button-wrapper {
@@ -230,11 +231,11 @@ h1.landing-youtube {
       background: #ffd113;
       color: #000;
       font-family: "Poppins", sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 700;
       letter-spacing: -1px;
       text-decoration: none;
-      padding: 16px 32px; // <-- más compacto en móvil
+      padding: 12px 14px; // <-- más compacto en móvil
       border-radius: 8px;
       display: inline-block;
       text-align: center;
